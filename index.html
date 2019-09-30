@@ -13,7 +13,7 @@
 <body>
   <header class="header">
     <div class="header__top">
-      <div class="wrapper">
+      <div class="wrapper header__wrap">
         <div class="logo">
           <img src="img/images/logo.png" alt="Logo">
         </div>
@@ -32,9 +32,9 @@
           <a href="mailto:rom.stroy@yandex.ru" class="header__call">rom.stroy@yandex.ru</a>
         </div>
         <div class="header__icons">
-          <a href="#" class="header__like" title=""></a>
+          <a href="#" class="header__like" title="Избранное"></a>
           <a href="#" class="header__cart">
-            <span class="header__number"></span>
+            <span class="header__number">1</span>
             <span class="header__price">25 470 руб.</span>
           </a>
         </div>
@@ -42,101 +42,103 @@
     </div>
     
     <nav class="menu">
-      <div class="menu__main">
-        <button type="button" class="menu__btn">
-          <svg width="12" height="14" viewBox="0 0 12 14">
-            <path d="M236,133h12v2H236v-2Zm0,12h12v2H236v-2Zm0-6h12v2H236v-2Z" transform="translate(-236 -133)"/>
-          </svg>
-          <span>Каталог товаров</span>
-        </button>
-        <ul class="menu__list">
-          <li class="menu__item menu__item--active menu__item--arrow">
-            <a href="#" class="menu__link">Кровля</a>
-            <ul class="menu__sublist">
-              <li class="menu__subitem"><a href="#">Металлочерепица</a></li>
-              <li class="menu__subitem"><a href="#">Мягкая кровля</a></li>
-              <li class="menu__subitem"><a href="#">Композитная черепица</a></li>
-              <li class="menu__subitem"><a href="#">Натуральная черепица BRAAS</a></li>
-              <li class="menu__subitem"><a href="#">Профнастил</a></li>
-              <li class="menu__subitem"><a href="#">Фальцевая кровля</a></li>
-            </ul>
-          </li>
-          <li class="menu__item menu__item--arrow">
-            <a href="#" class="menu__link">Сайдинг</a>
-            <ul class="menu__sublist">
-              <li class="menu__subitem"><a href="#">Option 1</a></li>
-              <li class="menu__subitem"><a href="#">Option 2</a></li>
-              <li class="menu__subitem"><a href="#">Option 3</a></li>
-            </ul>
-          </li>
-          <li class="menu__item menu__item--arrow">
-            <a href="#" class="menu__link">Водостоки для крыши</a>
-            <ul class="menu__sublist">
-              <li class="menu__subitem"><a href="#">Option 1</a></li>
-              <li class="menu__subitem"><a href="#">Option 2</a></li>
-              <li class="menu__subitem"><a href="#">Option 3</a></li>
-            </ul>
-          </li>
-          <li class="menu__item menu__item--arrow">
-            <a href="#" class="menu__link">Гидро-пароизоляция</a>
-            <ul class="menu__sublist">
-              <li class="menu__subitem"><a href="#">Option 1</a></li>
-              <li class="menu__subitem"><a href="#">Option 2</a></li>
-              <li class="menu__subitem"><a href="#">Option 3</a></li>
-            </ul>
-          </li>
-          <li class="menu__item menu__item--arrow">
-            <a href="#" class="menu__link">Карнизный свес, софит</a>
-            <ul class="menu__sublist">
-              <li class="menu__subitem"><a href="#">Option 1</a></li>
-              <li class="menu__subitem"><a href="#">Option 2</a></li>
-              <li class="menu__subitem"><a href="#">Option 3</a></li>
-            </ul>
-          </li>
-          <li class="menu__item menu__item--arrow">
-            <a href="#" class="menu__link">Элементы безопасности</a>
-            <ul class="menu__sublist">
-              <li class="menu__subitem"><a href="#">Option 1</a></li>
-              <li class="menu__subitem"><a href="#">Option 2</a></li>
-              <li class="menu__subitem"><a href="#">Option 3</a></li>
-            </ul>
-          </li>
-          <li class="menu__item menu__item--arrow">
-            <a href="#" class="menu__link">Кровельная вентиляция</a>
-            <ul class="menu__sublist">
-              <li class="menu__subitem"><a href="#">Option 1</a></li>
-              <li class="menu__subitem"><a href="#">Option 2</a></li>
-              <li class="menu__subitem"><a href="#">Option 3</a></li>
-            </ul>
-          </li>
-          <li class="menu__item menu__item--arrow">
-            <a href="#" class="menu__link">Гибочные работы</a>
-            <ul class="menu__sublist">
-              <li class="menu__subitem"><a href="#">Option 1</a></li>
-              <li class="menu__subitem"><a href="#">Option 2</a></li>
-              <li class="menu__subitem"><a href="#">Option 3</a></li>
-            </ul>
-          </li>
-          <li class="menu__item menu__item--arrow">
-            <a href="#" class="menu__link">Комплектующие</a>
-            <ul class="menu__sublist">
-              <li class="menu__subitem"><a href="#">Option 1</a></li>
-              <li class="menu__subitem"><a href="#">Option 2</a></li>
-              <li class="menu__subitem"><a href="#">Option 3</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-      
-      <div class="header__menu">
-        <button type="button" class="header__btn"></button>
-        <ul class="header__list">
-          <li class="header__item"><a href="#">Оплата</a></li>
-          <li class="header__item"><a href="#">Доставка</a></li>
-          <li class="header__item"><a href="#">Монтаж</a></li>
-          <li class="header__item"><a href="#">Контакты</a></li>
-          <li class="header__item"><a href="#">Акции</a></li>
-        </ul>
+      <div class="wrapper menu__wrap">
+        <div class="menu__main">
+          <button type="button" class="menu__btn">
+            <svg width="12" height="14" viewBox="0 0 12 14">
+              <path d="M236,133h12v2H236v-2Zm0,12h12v2H236v-2Zm0-6h12v2H236v-2Z" transform="translate(-236 -133)"/>
+            </svg>
+            <span>Каталог товаров</span>
+          </button>
+          <ul class="menu__list">
+            <li class="menu__item menu__item--active menu__item--arrow">
+              <a href="#" class="menu__link">Кровля</a>
+              <ul class="menu__sublist">
+                <li class="menu__subitem"><a href="#">Металлочерепица</a></li>
+                <li class="menu__subitem"><a href="#">Мягкая кровля</a></li>
+                <li class="menu__subitem"><a href="#">Композитная черепица</a></li>
+                <li class="menu__subitem"><a href="#">Натуральная черепица BRAAS</a></li>
+                <li class="menu__subitem"><a href="#">Профнастил</a></li>
+                <li class="menu__subitem"><a href="#">Фальцевая кровля</a></li>
+              </ul>
+            </li>
+            <li class="menu__item menu__item--arrow">
+              <a href="#" class="menu__link">Сайдинг</a>
+              <ul class="menu__sublist">
+                <li class="menu__subitem"><a href="#">Option 1</a></li>
+                <li class="menu__subitem"><a href="#">Option 2</a></li>
+                <li class="menu__subitem"><a href="#">Option 3</a></li>
+              </ul>
+            </li>
+            <li class="menu__item menu__item--arrow">
+              <a href="#" class="menu__link">Водостоки для крыши</a>
+              <ul class="menu__sublist">
+                <li class="menu__subitem"><a href="#">Option 1</a></li>
+                <li class="menu__subitem"><a href="#">Option 2</a></li>
+                <li class="menu__subitem"><a href="#">Option 3</a></li>
+              </ul>
+            </li>
+            <li class="menu__item menu__item--arrow">
+              <a href="#" class="menu__link">Гидро-пароизоляция</a>
+              <ul class="menu__sublist">
+                <li class="menu__subitem"><a href="#">Option 1</a></li>
+                <li class="menu__subitem"><a href="#">Option 2</a></li>
+                <li class="menu__subitem"><a href="#">Option 3</a></li>
+              </ul>
+            </li>
+            <li class="menu__item menu__item--arrow">
+              <a href="#" class="menu__link">Карнизный свес, софит</a>
+              <ul class="menu__sublist">
+                <li class="menu__subitem"><a href="#">Option 1</a></li>
+                <li class="menu__subitem"><a href="#">Option 2</a></li>
+                <li class="menu__subitem"><a href="#">Option 3</a></li>
+              </ul>
+            </li>
+            <li class="menu__item menu__item--arrow">
+              <a href="#" class="menu__link">Элементы безопасности</a>
+              <ul class="menu__sublist">
+                <li class="menu__subitem"><a href="#">Option 1</a></li>
+                <li class="menu__subitem"><a href="#">Option 2</a></li>
+                <li class="menu__subitem"><a href="#">Option 3</a></li>
+              </ul>
+            </li>
+            <li class="menu__item menu__item--arrow">
+              <a href="#" class="menu__link">Кровельная вентиляция</a>
+              <ul class="menu__sublist">
+                <li class="menu__subitem"><a href="#">Option 1</a></li>
+                <li class="menu__subitem"><a href="#">Option 2</a></li>
+                <li class="menu__subitem"><a href="#">Option 3</a></li>
+              </ul>
+            </li>
+            <li class="menu__item menu__item--arrow">
+              <a href="#" class="menu__link">Гибочные работы</a>
+              <ul class="menu__sublist">
+                <li class="menu__subitem"><a href="#">Option 1</a></li>
+                <li class="menu__subitem"><a href="#">Option 2</a></li>
+                <li class="menu__subitem"><a href="#">Option 3</a></li>
+              </ul>
+            </li>
+            <li class="menu__item menu__item--arrow">
+              <a href="#" class="menu__link">Комплектующие</a>
+              <ul class="menu__sublist">
+                <li class="menu__subitem"><a href="#">Option 1</a></li>
+                <li class="menu__subitem"><a href="#">Option 2</a></li>
+                <li class="menu__subitem"><a href="#">Option 3</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <div class="header__menu">
+          <button type="button" class="header__btn"></button>
+          <ul class="header__list">
+            <li class="header__item"><a href="#">Оплата</a></li>
+            <li class="header__item"><a href="#">Доставка</a></li>
+            <li class="header__item"><a href="#">Монтаж</a></li>
+            <li class="header__item"><a href="#">Контакты</a></li>
+            <li class="header__item"><a href="#">Акции</a></li>
+          </ul>
+        </div>
       </div>
     </nav>
   </header>

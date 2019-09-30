@@ -1,0 +1,134 @@
+.menu {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.menu__wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu__main {
+  position: relative;
+  
+  &:hover {
+    .menu__btn {
+      color: #4a4a4a;
+      background-color: rgb(255, 255, 255);
+      .transition();
+      
+      svg {
+        fill: #4a4a4a;
+        .transition();
+      }
+    }
+    .menu__list {
+      display: block;
+    }
+  }
+}
+
+.menu__btn {
+  display: block;
+  width: 280px;
+  padding: 20px 40px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+//  text-align: center;
+  color: @green;
+  font-family: "Roboto Slab", "Arial", sans-serif;
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  .transition();
+  
+  svg {
+    fill: @green;
+    margin-right: 20px;
+    .transition();
+  }
+}
+
+.menu__list {
+  display: none;
+  .reset();
+  list-style: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  z-index: 10;
+  width: 280px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 5px 15px 0px rgba(82, 90, 114, 0.05);
+  border-radius: 0 0 5px 5px;
+}
+
+.menu__item {
+  position: relative;
+  z-index: 10;
+  border-top: 1px solid rgb(232, 232, 232);
+  
+  &:hover {
+    color: #fff;
+    background-image: linear-gradient(to top, rgb(189,253,25) 0%, rgb(25,138,186) 100%);
+    
+    .menu__sublist {
+      display: block;
+    }
+  }
+  
+  &--arrow::after {
+    content: "";
+    position: absolute;
+    top: 23px;
+    right: 15px;
+    width: 4px;
+    height: 8px;
+    background-image: url(../img/icons/drop.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.menu__link {
+  display: block;
+  padding: 20px 40px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.menu__sublist {
+  display: none;
+  .reset();
+  list-style: none;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  z-index: -1;
+  line-height: 1;
+  width: 300px;
+  max-width: 100%;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 5px 15px 0px rgba(82, 90, 114, 0.05);
+  border-radius: 0 5px 5px 0;
+}
+
+.menu__subitem {
+  color: #000;
+  border-bottom: 1px solid rgb(232, 232, 232);
+  
+  &:last-child {
+    border-bottom: 0;
+  }
+  
+  a {
+    display: block;
+    padding: 20px 15px;
+    line-height: 1.2;
+  }
+  
+  &:hover {
+    color: #fff;
+    background-image: linear-gradient(to top, rgb(189,253,25) 0%, rgb(25,138,186) 100%);
+  }
+}
