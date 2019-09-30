@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex">
+  <meta  name="viewport" content="width=device-width,initial-scale=1">
+  <title>Кровля навсегда</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab:700&display=swap&subset=cyrillic-ext" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__top">
+      <div class="wrapper">
+        <div class="logo">
+          <img src="img/images/logo.png" alt="Logo">
+        </div>
+        <form action="#" class="search">
+          <input type="text" class="search__input" placeholder="Что вы ищите?">
+          <button type="submit" class="search__btn"></button>
+        </form>
+        <div class="header__contacts">
+          <a href="tel:+74997077578" class="header__phone header__phone--icon">8 (499) 707-75-78</a>
+          <a href="tel:+79255381707" class="header__phone">8 (925) 538-17-07</a>
+          <a href="#" class="header__call">Заказать звонок</a>
+        </div>
+        <div class="header__contacts">
+          <a href="tel:+79032712488" class="header__phone">8 (903) 271-24-88</a>
+          <a href="tel:+79269196099" class="header__phone">8 (926) 919-60-99</a>
+          <a href="mailto:rom.stroy@yandex.ru" class="header__call">rom.stroy@yandex.ru</a>
+        </div>
+        <div class="header__icons">
+          <a href="#" class="header__like" title=""></a>
+          <a href="#" class="header__cart">
+            <span class="header__number"></span>
+            <span class="header__price">25 470 руб.</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <nav class="menu">
+      <div class="menu__main">
+        <button type="button" class="menu__btn">
+          <svg width="12" height="14" viewBox="0 0 12 14">
+            <path d="M236,133h12v2H236v-2Zm0,12h12v2H236v-2Zm0-6h12v2H236v-2Z" transform="translate(-236 -133)"/>
+          </svg>
+          <span>Каталог товаров</span>
+        </button>
+        <ul class="menu__list">
+          <li class="menu__item menu__item--active menu__item--arrow">
+            <a href="#" class="menu__link">Кровля</a>
+            <ul class="menu__sublist">
+              <li class="menu__subitem"><a href="#">Металлочерепица</a></li>
+              <li class="menu__subitem"><a href="#">Мягкая кровля</a></li>
+              <li class="menu__subitem"><a href="#">Композитная черепица</a></li>
+              <li class="menu__subitem"><a href="#">Натуральная черепица BRAAS</a></li>
+              <li class="menu__subitem"><a href="#">Профнастил</a></li>
+              <li class="menu__subitem"><a href="#">Фальцевая кровля</a></li>
+            </ul>
+          </li>
+          <li class="menu__item menu__item--arrow">
+            <a href="#" class="menu__link">Сайдинг</a>
+            <ul class="menu__sublist">
+              <li class="menu__subitem"><a href="#">Option 1</a></li>
+              <li class="menu__subitem"><a href="#">Option 2</a></li>
+              <li class="menu__subitem"><a href="#">Option 3</a></li>
+            </ul>
+          </li>
+          <li class="menu__item menu__item--arrow">
+            <a href="#" class="menu__link">Водостоки для крыши</a>
+            <ul class="menu__sublist">
+              <li class="menu__subitem"><a href="#">Option 1</a></li>
+              <li class="menu__subitem"><a href="#">Option 2</a></li>
+              <li class="menu__subitem"><a href="#">Option 3</a></li>
+            </ul>
+          </li>
+          <li class="menu__item menu__item--arrow">
+            <a href="#" class="menu__link">Гидро-пароизоляция</a>
+            <ul class="menu__sublist">
+              <li class="menu__subitem"><a href="#">Option 1</a></li>
+              <li class="menu__subitem"><a href="#">Option 2</a></li>
+              <li class="menu__subitem"><a href="#">Option 3</a></li>
+            </ul>
+          </li>
+          <li class="menu__item menu__item--arrow">
+            <a href="#" class="menu__link">Карнизный свес, софит</a>
+            <ul class="menu__sublist">
+              <li class="menu__subitem"><a href="#">Option 1</a></li>
+              <li class="menu__subitem"><a href="#">Option 2</a></li>
+              <li class="menu__subitem"><a href="#">Option 3</a></li>
+            </ul>
+          </li>
+          <li class="menu__item menu__item--arrow">
+            <a href="#" class="menu__link">Элементы безопасности</a>
+            <ul class="menu__sublist">
+              <li class="menu__subitem"><a href="#">Option 1</a></li>
+              <li class="menu__subitem"><a href="#">Option 2</a></li>
+              <li class="menu__subitem"><a href="#">Option 3</a></li>
+            </ul>
+          </li>
+          <li class="menu__item menu__item--arrow">
+            <a href="#" class="menu__link">Кровельная вентиляция</a>
+            <ul class="menu__sublist">
+              <li class="menu__subitem"><a href="#">Option 1</a></li>
+              <li class="menu__subitem"><a href="#">Option 2</a></li>
+              <li class="menu__subitem"><a href="#">Option 3</a></li>
+            </ul>
+          </li>
+          <li class="menu__item menu__item--arrow">
+            <a href="#" class="menu__link">Гибочные работы</a>
+            <ul class="menu__sublist">
+              <li class="menu__subitem"><a href="#">Option 1</a></li>
+              <li class="menu__subitem"><a href="#">Option 2</a></li>
+              <li class="menu__subitem"><a href="#">Option 3</a></li>
+            </ul>
+          </li>
+          <li class="menu__item menu__item--arrow">
+            <a href="#" class="menu__link">Комплектующие</a>
+            <ul class="menu__sublist">
+              <li class="menu__subitem"><a href="#">Option 1</a></li>
+              <li class="menu__subitem"><a href="#">Option 2</a></li>
+              <li class="menu__subitem"><a href="#">Option 3</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="header__menu">
+        <button type="button" class="header__btn"></button>
+        <ul class="header__list">
+          <li class="header__item"><a href="#">Оплата</a></li>
+          <li class="header__item"><a href="#">Доставка</a></li>
+          <li class="header__item"><a href="#">Монтаж</a></li>
+          <li class="header__item"><a href="#">Контакты</a></li>
+          <li class="header__item"><a href="#">Акции</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  
+  <main>
+    <section class="banner">
+      <div class="swiper-container banner__slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide banner__slide" style="background-image:url(img/images/slide-1.jpg);">
+            <div class="wrapper">
+              <div class="banner__info">
+                <p>Виниловый софит</p>
+                <p><span>Grand Line, Gamrat</span></p>
+                <p>от 229 рублей/лист</p>
+                <a href="#" class="btn banner__btn">Выбрать софит</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide banner__slide" style="background-image:url(img/images/slide-2.jpg);">
+            <div class="wrapper">
+              <div class="banner__info">
+                <p>Металлический сайдинг</p>
+                <p><span>(Брус, Бревно, Корабельная доска)</span></p>
+                <p>от 369 рублей/м2</p>
+                <a href="#" class="btn banner__btn">Выбрать сайдинг</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination banner__pagination"></div>
+        <div class="swiper-button-prev banner__prev"></div>
+        <div class="swiper-button-next banner__next"></div>
+       </div>
+    </section>
+    
+    <section class="category">
+      <div class="wrapper">
+        <p class="title">Категории товаров</p>
+        <ul class="category__list">
+          <li class="category__item category__item--big">
+            <a href="#" class="category__link">
+              <img src="img/images/img-1.jpg" alt="Кровля">
+              <span class="category__btn">Кровля</span>
+            </a>
+          </li>
+          <li class="category__item">
+            <a href="#" class="category__link">
+              <img src="img/images/img-2.jpg" alt="Сайдинг">
+              <span class="category__btn">Сайдинг</span>
+            </a>
+          </li>
+          <li class="category__item">
+            <a href="#" class="category__link">
+              <img src="img/images/img-3.jpg" alt="Водостоки для крыши">
+              <span class="category__btn">Водостоки для крыши</span>
+            </a>
+          </li>
+          <li class="category__item">
+            <a href="#" class="category__link">
+              <img src="img/images/img-4.jpg" alt="Гидро-пароизоляция">
+              <span class="category__btn">Гидро-пароизоляция</span>
+            </a>
+          </li>
+          <li class="category__item category__item--big">
+            <a href="#" class="category__link">
+              <img src="img/images/img-5.jpg" alt="Карнизный свес, софит">
+              <span class="category__btn">Карнизный свес, софит</span>
+            </a>
+          </li>
+          <li class="category__item">
+            <a href="#" class="category__link">
+              <img src="img/images/img-6.jpg" alt="Элементы безопасности">
+              <span class="category__btn">Элементы безопасности</span>
+            </a>
+          </li>
+          <li class="category__item">
+            <a href="#" class="category__link">
+              <img src="img/images/img-7.jpg" alt="Кровельная вентиляция">
+              <span class="category__btn">Кровельная вентиляция</span>
+            </a>
+          </li>
+          <li class="category__item">
+            <a href="#" class="category__link">
+              <img src="img/images/img-8.jpg" alt="Гибочные работы">
+              <span class="category__btn">Гибочные работы</span>
+            </a>
+          </li>
+          <li class="category__item category__item--big">
+            <a href="#" class="category__link">
+              <img src="img/images/img-9.jpg" alt="Комплектующие">
+              <span class="category__btn">Комплектующие</span>
+            </a>
+          </li>
+          <li class="category__item category__item--big">
+            <a href="#" class="category__link">
+              <img src="img/images/img-10.jpg" alt="Cайдинг металлический">
+              <span class="category__btn">Cайдинг металлический</span>
+            </a>
+          </li>
+          <li class="category__item">
+            <a href="#" class="category__link">
+              <img src="img/images/img-11.jpg" alt="Мансардные окна">
+              <span class="category__btn">Мансардные окна</span>
+            </a>
+          </li>
+          <li class="category__item">
+            <a href="#" class="category__link">
+              <img src="img/images/img-12.jpg" alt="Дымники и колпаки">
+              <span class="category__btn">Дымники и колпаки</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    
+    <section class="about">
+      <div class="wrapper">
+        <p class="title">Кровля навсегда —  это возможно?</p>
+        <div class="about__wrap">
+          <div class="about__text">
+            <p><b>Компания «Кровля навсегда» предлагает вам огромный выбор кровельных материалов лучших производителей, используемых при строительстве домов, коттеджей и других строений.</b></p>
+            <p><b>Мы рады уделять каждому клиенту максимум времени, наша задача помочь подобрать именно то, что вам необходимо, а также разумно распорядиться своими ресурсами.</b></p>
+            <p>У нас индивидуальный подход к каждому клиенту, от самых требовательных до бюджетных решений.  Уверены, что на нашем сайте вы найдете много важной и полезной информации.</p>
+            <p>Наши профессионалы по монтажу никогда не станут работать с недоброкачественным материалом, потому что несут ответственность и гарантию выполненных работ, дешевый материал как правило никогда не даст хорошего, долголетнего результата!</p>
+            <p>«Кровля навсегда» — это серьезный подход, надежность и высокое качество современных материалов для вашего дома.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="benefits">
+      <div class="wrapper">
+        <p class="title">Наши преимущества</p>
+        <ul class="benefits__list">
+          <li class="benefits__item">
+            <figure class="benefits__img">
+              <img src="img/images/icon-1.png" alt="Выезд на замер — бесплатно!">
+            </figure>
+            <p>Выезд на замер — бесплатно!</p>
+          </li>
+          <li class="benefits__item">
+            <figure class="benefits__img">
+              <img src="img/images/icon-2.png" alt="Скидки и подарки лучшим покупателям">
+            </figure>
+            <p>Скидки и подарки лучшим покупателям</p>
+          </li>
+          <li class="benefits__item">
+            <figure class="benefits__img">
+              <img src="img/images/icon-3.png" alt="Бесплатная доставка до 30 км от МКАД">
+            </figure>
+            <p>Бесплатная доставка до 30 км от МКАД</p>
+          </li>
+          <li class="benefits__item">
+            <figure class="benefits__img">
+              <img src="img/images/icon-4.png" alt="Только проверенные производители">
+            </figure>
+            <p>Только проверенные производители</p>
+          </li>
+          <li class="benefits__item">
+            <figure class="benefits__img">
+              <img src="img/images/icon-5.png" alt="Гарантия на монтаж">
+            </figure>
+            <p>Гарантия на монтаж</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    
+    <section class="popular">
+      <div class="wrapper">
+        <p class="title">Популярные товары</p>
+        <div class="swiper-container popular__slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide popular__slide">
+              <a href="#" class="popular__link">
+                <div class="popular__info">
+                  <p>Решетчатые снегозадержатели для фальцевой кровли</p>
+                  <span class="btn popular__btn">Подробнее</span>
+                </div>
+                <figure class="popular__img">
+                  <img src="img/images/img-13.jpg" alt="Популярные товары">
+                </figure>
+              </a>
+            </div>
+            <div class="swiper-slide popular__slide">
+              <a href="#" class="popular__link">
+                <div class="popular__info">
+                  <p>Решетчатые снегозадержатели для фальцевой кровли</p>
+                  <span class="btn popular__btn">Подробнее</span>
+                </div>
+                <figure class="popular__img">
+                  <img src="img/images/img-13.jpg" alt="Популярные товары">
+                </figure>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-button-prev popular__prev"></div>
+          <div class="swiper-button-next popular__next"></div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="info">
+      <div class="wrapper">
+        <ul class="info__list">
+          <li class="info__item info__item--opened">
+            <button type="button" class="info__title">Уважаемые посетители, приветствуем вас на нашем сайте!</button>
+            <div class="info__drop">
+              <img src="img/images/img-14.jpg" alt="Кровля навсегда">
+              <p>Наша компания "Кровля навсегда" предлагает вам огромный выбор кровельных материалов лучших производителей, используемых при строительстве домов, коттеджей и других строений. Мы рады уделять каждому клиенту максимум времени, наша задача помочь подобрать именно то, что вам необходимо, а также разумно распорядиться своими ресурсами. У нас индивидуальный подход к каждому клиенту, от самых требовательных до бюджетных решений. Надеемся что на нашем сайте вы найдете много важной и полезной информации.</p>
+              <p>Вы затеяли строительство дома или хотите сделать ремонт на даче? Как правило каждый сталкивается с вопросом что же лучше и надежнее?</p>
+              <p><a href="#">Кровля из Металлочерепицы</a> или <a href="#">мягкая кровля</a>? <a href="#">Пластиковый водосток</a> или <a href="#">металлический</a>? Чем лучше <a href="#">композитная черепица</a>? И для чего нужна <a href="#">паро-гидроизоляция</a>? Мы поможем в этом разобраться, так как на начальной стадии отбора материалов мы рекомендуем только лучших производителей-проверенных временем. Наши профессионалы по монтажу никогда не станут работать с недоброкачественным материалом, потому что несут ответственность и гарантию выполненных работ, дешевый материал как правило никогда не даст хорошего, долголетнего результата!</p>
+              <p>"Кровля навсегда" — это серьезный подход, надежность и высокое качество современных материалов для вашего дома.</p>
+            </div>
+          </li>
+          <li class="info__item">
+            <button type="button" class="info__title">Кровля</button>
+            <div class="info__drop">
+               <p>Наша компания "Кровля навсегда" предлагает вам огромный выбор кровельных материалов лучших производителей, используемых при строительстве домов, коттеджей и других строений. Мы рады уделять каждому клиенту максимум времени, наша задача помочь подобрать именно то, что вам необходимо, а также разумно распорядиться своими ресурсами. У нас индивидуальный подход к каждому клиенту, от самых требовательных до бюджетных решений. Надеемся что на нашем сайте вы найдете много важной и полезной информации.</p>
+            </div>
+          </li>
+          <li class="info__item">
+            <button type="button" class="info__title">Металлочерепица</button>
+            <div class="info__drop">
+               <p>Наша компания "Кровля навсегда" предлагает вам огромный выбор кровельных материалов лучших производителей, используемых при строительстве домов, коттеджей и других строений. Мы рады уделять каждому клиенту максимум времени, наша задача помочь подобрать именно то, что вам необходимо, а также разумно распорядиться своими ресурсами. У нас индивидуальный подход к каждому клиенту, от самых требовательных до бюджетных решений. Надеемся что на нашем сайте вы найдете много важной и полезной информации.</p>
+            </div>
+          </li>
+          <li class="info__item">
+            <button type="button" class="info__title">Мягкая кровля</button>
+            <div class="info__drop">
+               <p>Наша компания "Кровля навсегда" предлагает вам огромный выбор кровельных материалов лучших производителей, используемых при строительстве домов, коттеджей и других строений. Мы рады уделять каждому клиенту максимум времени, наша задача помочь подобрать именно то, что вам необходимо, а также разумно распорядиться своими ресурсами. У нас индивидуальный подход к каждому клиенту, от самых требовательных до бюджетных решений. Надеемся что на нашем сайте вы найдете много важной и полезной информации.</p>
+            </div>
+          </li>
+          <li class="info__item">
+            <button type="button" class="info__title">Композитная черепица</button>
+            <div class="info__drop">
+               <p>Наша компания "Кровля навсегда" предлагает вам огромный выбор кровельных материалов лучших производителей, используемых при строительстве домов, коттеджей и других строений. Мы рады уделять каждому клиенту максимум времени, наша задача помочь подобрать именно то, что вам необходимо, а также разумно распорядиться своими ресурсами. У нас индивидуальный подход к каждому клиенту, от самых требовательных до бюджетных решений. Надеемся что на нашем сайте вы найдете много важной и полезной информации.</p>
+            </div>
+          </li>
+          <li class="info__item">
+            <button type="button" class="info__title">Натуральная черепица</button>
+            <div class="info__drop">
+               <p>Наша компания "Кровля навсегда" предлагает вам огромный выбор кровельных материалов лучших производителей, используемых при строительстве домов, коттеджей и других строений. Мы рады уделять каждому клиенту максимум времени, наша задача помочь подобрать именно то, что вам необходимо, а также разумно распорядиться своими ресурсами. У нас индивидуальный подход к каждому клиенту, от самых требовательных до бюджетных решений. Надеемся что на нашем сайте вы найдете много важной и полезной информации.</p>
+            </div>
+          </li>
+          <li class="info__item">
+            <button type="button" class="info__title">Профнастил</button>
+            <div class="info__drop">
+               <p>Наша компания "Кровля навсегда" предлагает вам огромный выбор кровельных материалов лучших производителей, используемых при строительстве домов, коттеджей и других строений. Мы рады уделять каждому клиенту максимум времени, наша задача помочь подобрать именно то, что вам необходимо, а также разумно распорядиться своими ресурсами. У нас индивидуальный подход к каждому клиенту, от самых требовательных до бюджетных решений. Надеемся что на нашем сайте вы найдете много важной и полезной информации.</p>
+            </div>
+          </li>
+          <li class="info__item">
+            <button type="button" class="info__title">Водосток</button>
+            <div class="info__drop">
+               <p>Наша компания "Кровля навсегда" предлагает вам огромный выбор кровельных материалов лучших производителей, используемых при строительстве домов, коттеджей и других строений. Мы рады уделять каждому клиенту максимум времени, наша задача помочь подобрать именно то, что вам необходимо, а также разумно распорядиться своими ресурсами. У нас индивидуальный подход к каждому клиенту, от самых требовательных до бюджетных решений. Надеемся что на нашем сайте вы найдете много важной и полезной информации.</p>
+            </div>
+          </li>
+          <li class="info__item">
+            <button type="button" class="info__title">Сайдинг</button>
+            <div class="info__drop">
+               <p>Наша компания "Кровля навсегда" предлагает вам огромный выбор кровельных материалов лучших производителей, используемых при строительстве домов, коттеджей и других строений. Мы рады уделять каждому клиенту максимум времени, наша задача помочь подобрать именно то, что вам необходимо, а также разумно распорядиться своими ресурсами. У нас индивидуальный подход к каждому клиенту, от самых требовательных до бюджетных решений. Надеемся что на нашем сайте вы найдете много важной и полезной информации.</p>
+            </div>
+          </li>
+          <li class="info__item">
+            <button type="button" class="info__title">Карнизный свес - софит - подшивка!</button>
+            <div class="info__drop">
+               <p>Наша компания "Кровля навсегда" предлагает вам огромный выбор кровельных материалов лучших производителей, используемых при строительстве домов, коттеджей и других строений. Мы рады уделять каждому клиенту максимум времени, наша задача помочь подобрать именно то, что вам необходимо, а также разумно распорядиться своими ресурсами. У нас индивидуальный подход к каждому клиенту, от самых требовательных до бюджетных решений. Надеемся что на нашем сайте вы найдете много важной и полезной информации.</p>
+            </div>
+          </li>
+          <li class="info__item">
+            <button type="button" class="info__title">Кровельная вентиляция</button>
+            <div class="info__drop">
+               <p>Наша компания "Кровля навсегда" предлагает вам огромный выбор кровельных материалов лучших производителей, используемых при строительстве домов, коттеджей и других строений. Мы рады уделять каждому клиенту максимум времени, наша задача помочь подобрать именно то, что вам необходимо, а также разумно распорядиться своими ресурсами. У нас индивидуальный подход к каждому клиенту, от самых требовательных до бюджетных решений. Надеемся что на нашем сайте вы найдете много важной и полезной информации.</p>
+            </div>
+          </li>
+          <li class="info__item">
+            <button type="button" class="info__title">Паро-гидроизоляция</button>
+            <div class="info__drop">
+               <p>Наша компания "Кровля навсегда" предлагает вам огромный выбор кровельных материалов лучших производителей, используемых при строительстве домов, коттеджей и других строений. Мы рады уделять каждому клиенту максимум времени, наша задача помочь подобрать именно то, что вам необходимо, а также разумно распорядиться своими ресурсами. У нас индивидуальный подход к каждому клиенту, от самых требовательных до бюджетных решений. Надеемся что на нашем сайте вы найдете много важной и полезной информации.</p>
+            </div>
+          </li>
+          <li class="info__item">
+            <button type="button" class="info__title">Снегозадержатели</button>
+            <div class="info__drop">
+               <p>Наша компания "Кровля навсегда" предлагает вам огромный выбор кровельных материалов лучших производителей, используемых при строительстве домов, коттеджей и других строений. Мы рады уделять каждому клиенту максимум времени, наша задача помочь подобрать именно то, что вам необходимо, а также разумно распорядиться своими ресурсами. У нас индивидуальный подход к каждому клиенту, от самых требовательных до бюджетных решений. Надеемся что на нашем сайте вы найдете много важной и полезной информации.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    
+    <section class="consult">
+      <div class="wrapper">
+        <p class="title">Получите консультацию специалиста</p>
+        <p class="consult__text">Наши специалисты помогут вам определиться с выбором.<br>Оставьте заявку на консультацию и мы свяжемся с вами в течение нескольких минут.</p>
+        <form action="#" class="form consult__form">
+          <div class="form__wrap">
+            <input type="text" class="form__input" placeholder="Ваше имя">
+            <input type="text" class="form__input" placeholder="Телефон">
+            <input type="text" class="form__input" placeholder="Email">
+          </div>
+          <textarea class="form__message" placeholder="Текст сообщения"></textarea>
+          <input type="checkbox" id="checkbox" class="form__checkbox">
+          <label for="checkbox" class="form__label">Я не робот</label>
+          <button type="submit" class="btn form__btn">Отправить</button>
+          <p class="form__comment">Отправляя свои контактные данные, вы подтверждаете, что ознакомились с <a href="#">Политикой конфиденциальности</a></p>
+        </form>
+      </div>
+    </section>
+    
+    <section class="brand">
+      <div class="wrapper">
+        <p class="title">Производители</p>
+        <div class="brand__wrap">
+          <div class="swiper-container brand__slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide brand__slide">
+                <img src="img/images/logo-1.jpg" alt="Производители">
+              </div>
+              <div class="swiper-slide brand__slide">
+                <img src="img/images/logo-2.jpg" alt="Производители">
+              </div>
+              <div class="swiper-slide brand__slide">
+                <img src="img/images/logo-3.jpg" alt="Производители">
+              </div>
+              <div class="swiper-slide brand__slide">
+                <img src="img/images/logo-4.jpg" alt="Производители">
+              </div>
+              <div class="swiper-slide brand__slide">
+                <img src="img/images/logo-5.jpg" alt="Производители">
+              </div>
+              <div class="swiper-slide brand__slide">
+                <img src="img/images/logo-6.jpg" alt="Производители">
+              </div>
+            </div>
+           </div>
+           <div class="swiper-button-prev brand__prev"></div>
+           <div class="swiper-button-next brand__next"></div>
+         </div>
+      </div>
+    </section>
+    
+    <section class="object">
+      <div class="wrapper">
+        <p class="title">Наши объекты</p>
+        <div class="object__wrap">
+          <div class="swiper-container object__slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide object__slide">
+                <a href="#" class="object__link">
+                  <figure class="object__img">
+                    <img src="img/images/house-1.jpg" alt="Наши объекты">
+                  </figure>
+                  <p class="object__title">Дом ТЕХНИКОЛЬ</p>
+                  <p class="object__about">Мягкая черепица, Shinglas</p>
+                </a>
+              </div>
+              <div class="swiper-slide object__slide">
+                <a href="#" class="object__link">
+                  <figure class="object__img">
+                    <img src="img/images/house-2.jpg" alt="Наши объекты">
+                  </figure>
+                  <p class="object__title">Частный дом в г. Уфа</p>
+                  <p class="object__about">Фасадная плитка, Технониколь Hauberk</p>
+                </a>
+              </div>
+              <div class="swiper-slide object__slide">
+                <a href="#" class="object__link">
+                  <figure class="object__img">
+                    <img src="img/images/house-3.jpg" alt="Наши объекты">
+                  </figure>
+                  <p class="object__title">Коттеджный поселок Капитан, дом 6 (Р-65)</p>
+                  <p class="object__about">Гибкая черепица, Shinglas</p>
+                </a>
+              </div>
+              <div class="swiper-slide object__slide">
+                <a href="#" class="object__link">
+                  <figure class="object__img">
+                    <img src="img/images/house-4.jpg" alt="Наши объекты">
+                  </figure>
+                  <p class="object__title">ДО Троице-Вороново, беседка</p>
+                  <p class="object__about">Мягкая черепица, Shinglas</p>
+                </a>
+              </div>
+              <div class="swiper-slide object__slide">
+                <a href="#" class="object__link">
+                  <figure class="object__img">
+                    <img src="img/images/house-1.jpg" alt="Наши объекты">
+                  </figure>
+                  <p class="object__title">Дом ТЕХНИКОЛЬ</p>
+                  <p class="object__about">Мягкая черепица, Shinglas</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-prev object__prev"></div>
+          <div class="swiper-button-next object__next"></div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="map">
+      
+    </section>
+  </main>
+  
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="footer__top">
+        <div class="footer__menu">
+          <div class="footer__wrap">
+            <div class="footer__block">
+              <p class="footer__title">О компании</p>
+              <ul class="footer__list">
+                <li><a href="#">Компания Кровля навсегда</a></li>
+                <li><a href="#">История компании</a></li>
+                <li><a href="#">Производство</a></li>
+                <li><a href="#">Политика по качеству</a></li>
+                <li><a href="#">Социальная ответственность</a></li>
+                <li><a href="#">Честная конкуренция</a></li>
+                <li><a href="#">Сотрудничество</a></li>
+                <li><a href="#">Компания №1</a></li>
+                <li><a href="#">Пресс-центр</a></li>
+                <li><a href="#">Карьера</a></li>
+              </ul>
+            </div>
+            <div class="footer__block">
+              <p class="footer__title">Покупателям</p>
+              <ul class="footer__list">
+                <li><a href="#">Доставка</a></li>
+                <li><a href="#">Оплата</a></li>
+                <li><a href="#">Калькулятор</a></li>
+                <li><a href="#">Публичная оферта</a></li>
+                <li><a href="#">Монтаж</a></li>
+                <li><a href="#">Гарантия</a></li>
+                <li><a href="#">Отзывы</a></li>
+              </ul>
+            </div>
+            <div class="footer__block">
+              <p class="footer__title">Каталог</p>
+              <ul class="footer__list">
+                <li><a href="#">Кровля</a></li>
+                <li><a href="#">Сайдинг</a></li>
+                <li><a href="#">Водостоки для крыши</a></li>
+                <li><a href="#">Гидро-пароизоляция</a></li>
+                <li><a href="#">Карнизный свес, софит</a></li>
+                <li><a href="#">Элементы безопасности</a></li>
+                <li><a href="#">Кровельная вентиляция</a></li>
+                <li><a href="#">Гибочные работы</a></li>
+                <li><a href="#">Комплектующие</a></li>
+              </ul>
+            </div>
+          </div>
+          <p class="footer__comment">Представленные в каталоге продукции цвета являются точной копией образцов шкалы RAL. Однако экран Вашего компьютера может давать цветовое искажение, поэтому возможно отличие от действительных цветов. Вся приведенная информация, включая информацию о ценах, носит исключительно рекламно-информационный характер и не является публичной офертой. Точную информацию о ценах и ассортименте уточняйте в офисах продаж и по телефонам. </p>
+        </div>
+        <div class="footer__contacts">
+          <a href="tel:+74997077578" class="footer__phone footer__phone--main">8 (499) 707 75 78</a>
+          <a href="tel:+79032712488" class="footer__phone footer__phone--main">8 (903) 271 24 88</a>
+          <a href="tel:+79269196099" class="footer__phone">8 (926) 919-60-99</a>
+          <a href="tel:+79255381707" class="footer__phone">8 (925) 538-17-07</a>
+          <div class="footer__time">
+            <div class="footer__line">
+              <span>Работаем: с пн-пт</span>
+              <span>9-18</span>
+            </div>
+            <div class="footer__line">
+              <span>Cб, вс</span>
+              <span>9-17</span>
+            </div>
+          </div>
+          <div class="footer__line">
+            <span>без обеда</span>
+          </div>
+          <p><b>Для заявок на продукцию:</b><a href="mailto:mp@metallprofil.ru">mp@metallprofil.ru</a></p>
+          <p>Мы находимся на северо-западе МО, на территории строительного рынка «Петровский», павильоны В50, В51, Г23, В47. Адрес: Московская область, Новорижское шоссе (9 км. от МКАД)</p>
+          <p>Красногорский район, деревня Михалково (вблизи дер. Глухово и Поздняково и ОЦ "Riga Land")</p>
+          <ul class="social">
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <img src="img/icons/instagram.png" alt="Instagram">
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <img src="img/icons/vk.png" alt="VKontakte">
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <img src="img/icons/facebook.png" alt="Facebook">
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <img src="img/icons/twitter.png" alt="Twitter">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© Компания Кровля навсегда, 2019. Сайт krovlyaforever.ru не является публичной офертой</p>
+        <div class="footer__payment">
+          <span>Принимаем к оплате</span>
+          <img src="img/images/visa.png" alt="Visa">
+          <img src="img/images/mastercard.png" alt="MasterCard">
+        </div>
+        <p>Разработа и поддержка сайта: <a href="#">Limtek</a></p>
+      </div>
+    </div>
+    <button type="button" class="btn-top" title="Наверх"></button>
+  </footer>
+  
+  <!-- Modal window -->
+  <div style="display: none;" id="call" class="modal">
+  
+  </div>
+  
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
+
+  <!-- Sliders -->
+  <script>
+    var mySwiper = new Swiper ('.banner__slider', {
+      pagination: {
+        el: '.banner__pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.banner__next',
+        prevEl: '.banner__prev',
+      },
+      preventClicks: false,
+      preventClicksPropagation: false,
+    });
+    
+    var mySwiper = new Swiper ('.popular__slider', {
+      navigation: {
+        nextEl: '.popular__next',
+        prevEl: '.popular__prev',
+      },
+      preventClicks: false,
+      preventClicksPropagation: false,
+    });
+    
+    var mySwiper = new Swiper ('.brand__slider', {
+      navigation: {
+        nextEl: '.brand__next',
+        prevEl: '.brand__prev',
+      },
+      preventClicks: false,
+      preventClicksPropagation: false,
+      slidesPerView: 6,
+      loop: true,
+      breakpoints: {
+          1170: {
+              slidesPerView: 3,
+          },
+          1022: {
+              slidesPerView: 2,
+          },
+          480: {
+              slidesPerView: 1,
+          }
+      }
+    });
+    
+    var mySwiper = new Swiper ('.object__slider', {
+      navigation: {
+        nextEl: '.object__next',
+        prevEl: '.object__prev',
+      },
+      preventClicks: false,
+      preventClicksPropagation: false,
+      slidesPerView: 5,
+      loop: true,
+      breakpoints: {
+          1170: {
+              slidesPerView: 3,
+          },
+          1022: {
+              slidesPerView: 2,
+          },
+          480: {
+              slidesPerView: 1,
+          }
+      }
+    });
+  </script>
+</body>
+</html>
