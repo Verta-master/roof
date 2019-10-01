@@ -545,7 +545,7 @@
     </section>
     
     <section class="map">
-      
+      <iframe src="https://yandex.com/map-widget/v1/-/CGgwFC~0"></iframe>
     </section>
   </main>
   
@@ -720,6 +720,7 @@
       preventClicks: false,
       preventClicksPropagation: false,
       slidesPerView: 5,
+      spaceBetween: 35,
       loop: true,
       breakpoints: {
           1170: {
@@ -738,8 +739,10 @@
   <!-- Drops -->
   <script>
     $('.info__title').click(function() {
+      $('.info__item').removeClass('info__item--opened');
+      $('.info__drop').slideUp();
       $(this).next().slideDown();
-      $(this).prev().addClass('.info__item--opened');
+      $(this).parent().addClass('info__item--opened');
     });
   </script>
 </body>
