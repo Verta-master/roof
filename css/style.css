@@ -1340,11 +1340,15 @@ h2--center,
   border-radius: 3px;
 }
 .form__label::after {
+  display: none;
   content: "\2713";
   position: absolute;
   top: 0;
   left: 2px;
   font-size: 20px;
+}
+.form__checkbox:checked + .form__label::after {
+  display: block;
 }
 .form__comment {
   max-width: 400px;
@@ -1679,4 +1683,25 @@ h2--center,
 .footer__mail:hover,
 .footer__mail:active {
   text-decoration: none;
+}
+.modal .form__label,
+.modal .form__comment {
+  color: #000;
+}
+.modal .form__message,
+.modal .form__input {
+  width: 100%;
+  margin-bottom: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+.modal .form__label::before {
+  border-color: rgba(0, 0, 0, 0.5);
+}
+.modal__title {
+  margin-top: 0;
+  text-align: center;
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 900;
 }

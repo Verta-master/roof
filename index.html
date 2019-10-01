@@ -24,7 +24,7 @@
         <div class="header__contacts">
           <a href="tel:+74997077578" class="header__phone header__phone--icon">8 (499) 707-75-78</a>
           <a href="tel:+79255381707" class="header__phone">8 (925) 538-17-07</a>
-          <a href="#" class="header__call">Заказать звонок</a>
+          <a data-fancybox="" data-src="#call" href="javascript:;" class="header__call">Заказать звонок</a>
         </div>
         <div class="header__contacts">
           <a href="tel:+79032712488" class="header__phone">8 (903) 271-24-88</a>
@@ -658,7 +658,17 @@
   
   <!-- Modal window -->
   <div style="display: none;" id="call" class="modal">
-  
+    <p class="modal__title">Заявка на консультацию</p>
+    <form action="#" class="form">
+      <input type="text" class="form__input" placeholder="Ваше имя">
+      <input type="text" class="form__input" placeholder="Телефон">
+      <input type="text" class="form__input" placeholder="Email">
+      <textarea class="form__message" placeholder="Текст сообщения"></textarea>
+      <input type="checkbox" id="checkbox2" class="form__checkbox">
+      <label for="checkbox2" class="form__label">Я не робот</label>
+      <button type="submit" class="btn form__btn">Отправить</button>
+      <p class="form__comment">Отправляя свои контактные данные, вы подтверждаете, что ознакомились с <a href="#">Политикой конфиденциальности</a></p>
+    </form>
   </div>
   
   <script src="js/jquery-3.2.1.min.js"></script>
