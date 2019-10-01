@@ -1,0 +1,139 @@
+.footer {
+  position: relative;
+  color: #fff;
+  background-image: url(../img/images/footer.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.footer__bottom {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  line-height: 1;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  
+  p {
+    opacity: 0.5;
+    margin: 0;
+  }
+  a:hover,
+  a:active {
+    text-decoration: underline;
+  }
+}
+
+.footer__payment {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  img {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+
+.footer__top {
+  padding-top: 60px;
+  padding-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__menu {
+  width: 75%;
+}
+
+.footer__wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.footer__block {
+  width: 30%;
+}
+
+.footer__contacts {
+  width: 25%;
+}
+
+.footer__title {
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.footer__list {
+  .reset();
+  list-style: none;
+  
+  a:hover,
+  a:active {
+    text-decoration: underline;
+  }
+  
+  li {
+    margin-bottom: 5px;
+  }
+}
+
+.footer__comment {
+  max-width: 860px;
+  font-size: 14px;
+  opacity: 0.5;
+}
+
+.footer__phone {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.2;
+  .transition();
+  
+  &:hover,
+  &:active {
+    color: @green;
+    .transition();
+  }
+  
+  &--main {
+    font-size: 30px;
+    font-weight: 700;
+    color: @green;
+    
+    &:hover,
+    &:active {
+      color: #fff;
+      .transition();
+    }
+  }
+}
+
+.footer__time {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.footer__line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__mail {
+  display: block;
+  text-decoration: underline;
+  
+  &:hover,
+  &:active {
+    text-decoration: none;
+  }
+}
