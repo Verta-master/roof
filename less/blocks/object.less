@@ -1,0 +1,56 @@
+.object {
+  margin-bottom: 75px;
+}
+
+.object__wrap {
+  position: relative;
+}
+
+.object__link {
+  display: block;
+  color: #fff;
+  line-height: 1.2;
+  
+  &:hover,
+  &:active {
+    .object__title {
+      text-decoration: none;
+    }
+  }
+}
+
+.object__img {
+  width: 100%;
+  height: 186px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  overflow: hidden;
+  
+  img {
+    display: block;
+    flex: 0 0 auto;
+    object-fit: cover;
+    object-position: 50%;
+  }
+}
+
+.object__title {
+  margin-bottom: 0;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.object__about {
+  margin: 0;
+  font-size: 14px;
+}
+
+.object__prev {
+  left: -50px;
+}
+
+.object__next {
+  right: -50px;
+}
