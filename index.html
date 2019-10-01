@@ -21,7 +21,7 @@
           <input type="text" class="search__input" placeholder="Что вы ищите?">
           <button type="submit" class="search__btn"></button>
         </form>
-        <div class="header__contacts">
+        <div class="header__contacts header__contacts--icon">
           <a href="tel:+74997077578" class="header__phone header__phone--icon">8 (499) 707-75-78</a>
           <a href="tel:+79255381707" class="header__phone">8 (925) 538-17-07</a>
           <a data-fancybox data-src="#call" href="javascript:;" class="header__call">Заказать звонок</a>
@@ -130,7 +130,6 @@
         </div>
 
         <div class="header__menu">
-          <button type="button" class="header__btn"></button>
           <ul class="header__list">
             <li class="header__item"><a href="#">Оплата</a></li>
             <li class="header__item"><a href="#">Доставка</a></li>
@@ -710,10 +709,13 @@
       slidesPerView: 6,
       loop: true,
       breakpoints: {
-          1170: {
-              slidesPerView: 3,
+          1200: {
+              slidesPerView: 4,
           },
           1022: {
+              slidesPerView: 3,
+          },
+          766: {
               slidesPerView: 2,
           },
           480: {
@@ -733,7 +735,11 @@
       spaceBetween: 35,
       loop: true,
       breakpoints: {
-          1170: {
+          1560: {
+            spaceBetween: 20,
+            slidesPerView: 4,
+          },
+          1200: {
               slidesPerView: 3,
           },
           1022: {
