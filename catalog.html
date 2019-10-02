@@ -6,7 +6,7 @@
   <meta  name="viewport" content="width=device-width,initial-scale=1">
   <title>Кровля навсегда</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab:700&display=swap&subset=cyrillic-ext" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -738,7 +738,36 @@
                   <a href="#" class="catalog__more">Подробнее</a>
                 </div>
               </div>
-              
+              <div class="swiper-slide product__slide">
+                <figure class="catalog__img">
+                  <img src="img/images/product-1.jpg" alt="Полиэстер 0,4/0,45мм">
+                </figure>
+                <div class="catalog__info">
+                  <p class="catalog__title">Полиэстер 0,4/0,45мм</p>
+                  <p class="catalog__price">от 300/360 руб/м<sup>2</sup></p>
+                  <a href="#" class="catalog__more">Подробнее</a>
+                </div>
+              </div>
+              <div class="swiper-slide product__slide">
+                <figure class="catalog__img">
+                  <img src="img/images/product-2.jpg" alt="Granite CLOUDY 0,5мм">
+                </figure>
+                <div class="catalog__info">
+                  <p class="catalog__title">Granite CLOUDY 0,5мм</p>
+                  <p class="catalog__price">613 руб/м<sup>2</sup></p>
+                  <a href="#" class="catalog__more">Подробнее</a>
+                </div>
+              </div>
+              <div class="swiper-slide product__slide">
+                <figure class="catalog__img">
+                  <img src="img/images/product-3.jpg" alt="Colorcoat Prisma 0,5мм">
+                </figure>
+                <div class="catalog__info">
+                  <p class="catalog__title">Colorcoat Prisma® 0,5мм</p>
+                  <p class="catalog__price">565 руб/м<sup>2</sup></p>
+                  <a href="#" class="catalog__more">Подробнее</a>
+                </div>
+              </div>              
             </div>
             <div class="swiper-scrollbar product__scrollbar"></div>
           </div>
@@ -907,7 +936,7 @@
   
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/script.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
 
   <!-- Sliders -->
@@ -924,7 +953,22 @@
     var swiper = new Swiper('.product__slider', {
       scrollbar: {
         el: '.product__scrollbar',
-//        hide: true,
+        draggable: true,
+        dragSize: 225,
+        slidesPerView: 4,
+        slidesPerGroup: 4,
+        spaceBetween: 5,
+        breakpoints: {
+          1560: {
+              slidesPerView: 3,
+          },
+          1022: {
+              slidesPerView: 2,
+          },
+          480: {
+              slidesPerView: 1,
+          }
+        }
       },
     });
     
