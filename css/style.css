@@ -2027,8 +2027,13 @@ a.breadcrumbs__link:active::after {
   top: 0;
   left: 0;
 }
+.product {
+  margin-bottom: 50px;
+}
+.product__slider {
+  padding-bottom: 30px;
+}
 .product__slide {
-  width: 280px;
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2043,6 +2048,19 @@ a.breadcrumbs__link:active::after {
   border-radius: 5px;
   background-color: #ffffff;
   overflow: hidden;
+}
+.swiper-container-horizontal > .swiper-pagination-progressbar {
+  bottom: 0;
+  top: auto;
+  height: 6px;
+}
+.swiper-pagination-progressbar {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 3px;
+}
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+  background-color: #2bb239;
+  border-radius: 3px;
 }
 @media (max-width: 1800px) {
   .banner__prev {
