@@ -467,6 +467,9 @@ button {
   font-size: 18px;
   font-weight: 600;
 }
+.title-3 span {
+  color: #459e18;
+}
 .wrapper {
   width: 1560px;
   margin-left: auto;
@@ -1754,6 +1757,87 @@ button {
   width: 360px;
   max-width: 100%;
 }
+.sidebar__block {
+  width: 100%;
+  margin-bottom: 30px;
+  padding: 10px 30px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 5px 15px 0px rgba(82, 90, 114, 0.05);
+          box-shadow: 0px 5px 15px 0px rgba(82, 90, 114, 0.05);
+}
+.sidebar__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.sidebar__item {
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #18100d;
+}
+.sidebar__item a {
+  text-decoration: underline;
+}
+.sidebar__item a:hover,
+.sidebar__item a:active {
+  text-decoration: none;
+}
+.sidebar__slider {
+  margin-bottom: 30px;
+}
+.sidebar__slide {
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.sidebar__slide img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.sidebar__link {
+  display: block;
+}
+.sidebar__link:hover .sidebar__overlay,
+.sidebar__link:active .sidebar__overlay {
+  color: #459e18;
+}
+.sidebar__overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 10px 30px;
+  color: #fff;
+  font-weight: 600;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0)));
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+}
+.sidebar__next,
+.sidebar__prev {
+  width: 40px;
+  height: 40px;
+  line-height: 32px;
+  font-size: 25px;
+  text-align: center;
+  color: #fff;
+  background-color: rgba(22, 29, 45, 0.2);
+  background-image: none;
+}
+.sidebar__next {
+  right: 0;
+}
+.sidebar__prev {
+  left: 0;
+  -webkit-transform: none;
+          transform: none;
+}
+.sidebar__title {
+  margin-top: 0;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+}
 .content {
   width: calc(100% - 390px);
 }
@@ -2061,6 +2145,100 @@ a.breadcrumbs__link:active::after {
 .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
   background-color: #2bb239;
   border-radius: 3px;
+}
+.nav {
+  margin-bottom: 30px;
+  background-color: #444444;
+  border-radius: 5px;
+}
+.nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.nav__item {
+  position: relative;
+  border-bottom: 1px solid rgba(232, 232, 232, 0.1);
+}
+.nav__item:last-child {
+  border-bottom: 0;
+}
+.nav__item:last-child .nav__link {
+  border-radius: 0 0 5px 5px;
+}
+.nav__item:first-child .nav__link {
+  border-radius: 5px 5px 0 0;
+}
+.nav__item:hover .nav__link,
+.nav__item:active .nav__link,
+.nav__item--active .nav__link {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#bdfd19), to(#198aba));
+  background-image: linear-gradient(to top, #bdfd19 0%, #198aba 100%);
+}
+.nav__link {
+  display: block;
+  padding: 15px 25px;
+  padding-right: 50px;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 600;
+}
+.nav__drop-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  background-image: url(../img/icons/drop.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 4px 8px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+.nav__drop-btn--open {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+.nav__next-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  background-image: url(../img/icons/drop.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 4px 8px;
+}
+.nav__sublist {
+  display: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: #fff;
+}
+.nav__subitem {
+  border-bottom: 1px solid #e8e8e8;
+}
+.nav__subitem:last-child {
+  border-bottom: 0;
+}
+.nav__sublink {
+  display: block;
+  padding: 15px 35px;
+  padding-right: 50px;
+  font-size: 15px;
+  font-weight: 600;
+}
+.nav__sublink:hover,
+.nav__sublink:active {
+  color: #459e18;
+}
+.nav__catalog {
+  position: absolute;
+  top: 0;
+  left: 100%;
 }
 @media (max-width: 1800px) {
   .banner__prev {
