@@ -1,5 +1,5 @@
 .nav {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   background-color: rgb(68, 68, 68);
   border-radius: 5px;
 }
@@ -37,20 +37,20 @@
   }
   
   &--drop {
-    position: static;
-    
     .nav__drop-btn {
       transform: none;
     }
     &:hover {
-      
+      .nav__catalog {
+        display: flex;
+      }
     }
   }
 }
 
 .nav__link {
   display: block;
-  padding: 15px 25px;
+  padding: 12px 25px;
   padding-right: 50px;
   color: #fff;
   font-size: 17px;
@@ -91,7 +91,7 @@
 
 .nav__sublink {
   display: block;
-  padding: 15px 35px;
+  padding: 11px 35px;
   padding-right: 50px;
   font-size: 15px;
   font-weight: 600;
@@ -103,11 +103,12 @@
 }
 
 .nav__catalog {
+  display: none;
   position: absolute;
   z-index: 100;
   top: 0;
   left: 100%;
-  display: flex;
+//  display: flex;
   justify-content: flex-start;
   padding-top: 25px;
   color: #444444;
@@ -115,10 +116,11 @@
   background-color: rgb(255, 255, 255);
   box-shadow: 0px 0px 150px 0px rgba(0, 0, 0, 0.8);
   border-radius: 0 5px 5px 0;
+  overflow: hidden;
 }
 
 .nav__column {
-  width: 280px;
+  width: 290px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -136,18 +138,25 @@
   .reset();
   list-style: none;
   padding-left: 30px;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }
 
 .nav__catalog-item {
   position: relative;
   padding-right: 30px;
-  margin-bottom: 15px;
+//  margin-bottom: 5px;
 }
 
 .nav__catalog-link {
+  display: block;
+  margin-bottom: 10px;
   font-size: 15px;
   font-weight: 600;
+  
+  &:hover,
+  &:active {
+    color: #459e18;
+  }
 }
 
 .nav__more {
@@ -172,7 +181,7 @@
 .nav__catalog-sublist {
   .reset();
   list-style: none;
-  margin-top: 15px;
+  margin-bottom: 20px;
   
   li {
     position: relative;
@@ -191,6 +200,15 @@
       background-color: rgb(183, 249, 31);
     }
   }
+  
+  a:hover,
+  a:active {
+    color: #459e18;
+  }
+}
+
+.nav__title + .nav__catalog-sublist {
+  padding-left: 30px;
 }
 
 .nav__catalog-btn {

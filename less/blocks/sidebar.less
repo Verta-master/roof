@@ -4,21 +4,41 @@
 }
 
 .sidebar__block {
+  position: relative;
+  z-index: 2;
   width: 100%;
   margin-bottom: 30px;
-  padding: 10px 30px;
+  padding: 5px 30px;
+  padding-bottom: 15px;
   border-radius: 5px;
   background-color: rgb(255, 255, 255);
   box-shadow: 0px 5px 15px 0px rgba(82, 90, 114, 0.05);
+  overflow: hidden;
+  
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    bottom: -30px;
+    right: -30px;
+    width: 129px;
+    height: 129px;
+    background-image: url(../../img/icons/information.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.1;
+  }
 }
 
 .sidebar__list {
   .reset();
   list-style: none;
+  position: relative;
+  z-index: 3;
 }
 
 .sidebar__item {
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   font-size: 14px;
   color: #18100d;
   
@@ -92,6 +112,7 @@
 
 .sidebar__title {
   margin-top: 0;
+  margin-bottom: 15px;
   color: #fff;
   font-size: 24px;
   font-weight: 700;
