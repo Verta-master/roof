@@ -450,6 +450,7 @@ button {
   text-align: center;
 }
 .title-main {
+  margin-bottom: 10px;
   font-size: 36px;
   font-weight: 900;
   line-height: 1.2;
@@ -1758,21 +1759,40 @@ button {
   max-width: 100%;
 }
 .sidebar__block {
+  position: relative;
+  z-index: 2;
   width: 100%;
   margin-bottom: 30px;
-  padding: 10px 30px;
+  padding: 5px 30px;
+  padding-bottom: 15px;
   border-radius: 5px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 5px 15px 0px rgba(82, 90, 114, 0.05);
           box-shadow: 0px 5px 15px 0px rgba(82, 90, 114, 0.05);
+  overflow: hidden;
+}
+.sidebar__block::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  bottom: -30px;
+  right: -30px;
+  width: 129px;
+  height: 129px;
+  background-image: url(../../img/icons/information.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.1;
 }
 .sidebar__list {
   margin: 0;
   padding: 0;
   list-style: none;
+  position: relative;
+  z-index: 3;
 }
 .sidebar__item {
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   font-size: 14px;
   color: #18100d;
 }
@@ -1834,6 +1854,7 @@ button {
 }
 .sidebar__title {
   margin-top: 0;
+  margin-bottom: 15px;
   color: #fff;
   font-size: 24px;
   font-weight: 700;
@@ -1870,7 +1891,7 @@ button {
   top: 0;
   bottom: 0;
   left: -40px;
-  width: 434px;
+  width: 445px;
   display: block;
   background-color: #459e18;
   -webkit-transform: skewX(10deg);
@@ -1878,11 +1899,12 @@ button {
 }
 .content__info p {
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   line-height: 1.2;
   font-weight: 600;
 }
 .content__info .content__title {
+  margin-bottom: 10px;
   font-size: 30px;
   font-weight: 700;
 }
@@ -1936,11 +1958,11 @@ button {
   color: #fff;
 }
 a.breadcrumbs__link {
-  margin-right: 15px;
+  margin-right: 10px;
 }
 a.breadcrumbs__link::after {
   content: "\2014";
-  margin-left: 15px;
+  margin-left: 10px;
 }
 a.breadcrumbs__link:hover,
 a.breadcrumbs__link:active {
@@ -1975,7 +1997,7 @@ a.breadcrumbs__link:active::after {
       -ms-flex-pack: start;
           justify-content: flex-start;
   margin-right: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   border-radius: 5px;
   background-color: #ffffff;
   overflow: hidden;
@@ -2006,8 +2028,8 @@ a.breadcrumbs__link:active::after {
           flex: 0 0 auto;
 }
 .catalog__info {
-  padding: 20px 25px;
-  padding-bottom: 45px;
+  padding: 15px 25px;
+  padding-bottom: 40px;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -2024,7 +2046,7 @@ a.breadcrumbs__link:active::after {
 }
 .catalog__title {
   margin-top: 0;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
   color: #18100d;
   font-weight: 600;
 }
@@ -2074,9 +2096,17 @@ a.breadcrumbs__link:active::after {
 }
 .block {
   width: 100%;
+  margin-bottom: 50px;
   border-radius: 5px;
   background-color: #ffffff;
   overflow: hidden;
+}
+.block .title-2 {
+  margin-top: 0;
+  margin-bottom: 35px;
+}
+.block .title-3 {
+  margin-top: 25px;
 }
 .block__img {
   width: 100%;
@@ -2091,8 +2121,8 @@ a.breadcrumbs__link:active::after {
      object-position: 50%;
 }
 .block__text {
-  padding: 25px 50px;
-  padding-top: 5px;
+  padding: 17px 50px;
+  padding-bottom: 25px;
   color: #18100d;
   font-size: 15px;
 }
@@ -2100,6 +2130,7 @@ a.breadcrumbs__link:active::after {
   margin: 0;
   padding: 0;
   list-style: none;
+  margin-bottom: 25px;
 }
 .block__text ul li {
   position: relative;
@@ -2113,6 +2144,9 @@ a.breadcrumbs__link:active::after {
 }
 .product {
   margin-bottom: 50px;
+}
+.product .title-main {
+  margin-bottom: 20px;
 }
 .product__slider {
   padding-bottom: 30px;
@@ -2147,7 +2181,7 @@ a.breadcrumbs__link:active::after {
   border-radius: 3px;
 }
 .nav {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   background-color: #444444;
   border-radius: 5px;
 }
@@ -2155,6 +2189,7 @@ a.breadcrumbs__link:active::after {
   margin: 0;
   padding: 0;
   list-style: none;
+  position: relative;
 }
 .nav__item {
   position: relative;
@@ -2175,9 +2210,18 @@ a.breadcrumbs__link:active::after {
   background-image: -webkit-gradient(linear, left bottom, left top, from(#bdfd19), to(#198aba));
   background-image: linear-gradient(to top, #bdfd19 0%, #198aba 100%);
 }
+.nav__item--drop .nav__drop-btn {
+  -webkit-transform: none;
+          transform: none;
+}
+.nav__item--drop:hover .nav__catalog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 .nav__link {
   display: block;
-  padding: 15px 25px;
+  padding: 12px 25px;
   padding-right: 50px;
   color: #fff;
   font-size: 17px;
@@ -2200,17 +2244,6 @@ a.breadcrumbs__link:active::after {
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
 }
-.nav__next-btn {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 50px;
-  height: 50px;
-  background-image: url(../img/icons/drop.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 4px 8px;
-}
 .nav__sublist {
   display: none;
   margin: 0;
@@ -2226,7 +2259,7 @@ a.breadcrumbs__link:active::after {
 }
 .nav__sublink {
   display: block;
-  padding: 15px 35px;
+  padding: 11px 35px;
   padding-right: 50px;
   font-size: 15px;
   font-weight: 600;
@@ -2236,9 +2269,134 @@ a.breadcrumbs__link:active::after {
   color: #459e18;
 }
 .nav__catalog {
+  display: none;
   position: absolute;
+  z-index: 100;
   top: 0;
   left: 100%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-top: 25px;
+  color: #444444;
+  line-height: 1.2;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 0px 150px 0px rgba(0, 0, 0, 0.8);
+          box-shadow: 0px 0px 150px 0px rgba(0, 0, 0, 0.8);
+  border-radius: 0 5px 5px 0;
+  overflow: hidden;
+}
+.nav__column {
+  width: 290px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.nav__title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding-left: 30px;
+  font-size: 17px;
+  font-weight: 700;
+}
+.nav__catalog-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding-left: 30px;
+  margin-bottom: 60px;
+}
+.nav__catalog-item {
+  position: relative;
+  padding-right: 30px;
+}
+.nav__catalog-link {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-weight: 600;
+}
+.nav__catalog-link:hover,
+.nav__catalog-link:active {
+  color: #459e18;
+}
+.nav__more {
+  width: 100%;
+  height: 60px;
+  padding-left: 30px;
+  margin-top: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 700;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#bdfd19), to(#198aba));
+  background-image: linear-gradient(to top, #bdfd19 0%, #198aba 100%);
+}
+.nav__more:hover,
+.nav__more:active {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#bdfd19), to(#198aba));
+  background-image: linear-gradient(to bottom, #bdfd19 0%, #198aba 100%);
+}
+.nav__catalog-sublist {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 20px;
+}
+.nav__catalog-sublist li {
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  font-size: 14px;
+}
+.nav__catalog-sublist li::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #b7f91f;
+}
+.nav__catalog-sublist a:hover,
+.nav__catalog-sublist a:active {
+  color: #459e18;
+}
+.nav__title + .nav__catalog-sublist {
+  padding-left: 30px;
+}
+.nav__catalog-btn {
+  position: absolute;
+  top: -5px;
+  right: 5px;
+  width: 30px;
+  height: 30px;
+  background-image: url(../img/icons/drop.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 4px 8px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+.nav__catalog-btn--open {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 @media (max-width: 1800px) {
   .banner__prev {
