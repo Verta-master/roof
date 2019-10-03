@@ -95,11 +95,19 @@
   &:last-child {
     border-bottom: 0;
   }
+  &--active .nav__sublink {
+    color: #fff;
+    background-image: linear-gradient(to top, rgb(189,253,25) 0%, rgb(25,138,186) 100%);
+  }
 }
 
 .nav__sublist3 li,
 .nav__subitem2 {
   border-top: 1px solid rgba(232, 232, 232, 1);
+}
+
+.nav__subitem2--active .nav__sublink2 {
+  color: #459e18;
 }
 
 .nav__sublink {
