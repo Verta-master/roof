@@ -1,8 +1,12 @@
-//Mobile menu
+//Mobile and footer menu
 if (window.innerWidth < 1200) {
   $('.menu__btn').click(function() {
     $('.menu__main').toggleClass('menu__main--opened');
     $('.menu__list').slideToggle();
+  });
+  
+  $('.footer__title').click(function() {
+    $(this).next().slideToggle();
   });
 }
 
