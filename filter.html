@@ -151,14 +151,14 @@
               <a href="#" class="nav__link">Кровля</a>
               <button type="button" class="nav__drop-btn"></button>
               <ul class="nav__sublist">
-                <li class="nav__subitem">
+                <li class="nav__subitem nav__subitem--active">
                   <a href="#" class="nav__sublink">Металлочерепица</a>
                   <button type="button" class="nav__drop-btn"></button>
                   <ul class="nav__sublist2">
                     <li class="nav__subitem2">
                       <a href="#" class="nav__sublink2">Металл Профиль</a>
                     </li>
-                    <li class="nav__subitem2">
+                    <li class="nav__subitem2 nav__subitem2--active">
                       <a href="#" class="nav__sublink2">Grand Line</a>
                       <ul class="nav__sublist3">
                         <li><a href="#">Classic</a></li>
@@ -504,6 +504,95 @@
           </ul>
         </nav>
         
+        <div class="filter">
+          <p class="title-3">Подбор по параметрам</p>
+          <form action="#" class="filter__form">
+            <fieldset class="filter__field">
+              <p class="filter__subtitle">Производитель</p>
+              <input type="checkbox" id="check1" class="filter__checkbox">
+              <label for="check1" class="filter__label">Aquasystem<sup>24</sup></label>
+              <input type="checkbox" id="check2" class="filter__checkbox">
+              <label for="check2" class="filter__label">Cedral<sup>7</sup></label>
+              <input type="checkbox" id="check3" class="filter__checkbox">
+              <label for="check3" class="filter__label">Docke<sup>11</sup></label>
+              <input type="checkbox" id="check4" class="filter__checkbox" checked="">
+              <label for="check4" class="filter__label">Grand Line<sup>22</sup></label>
+              <input type="checkbox" id="check5" class="filter__checkbox">
+              <label for="check5" class="filter__label">Металл Профиль<sup>9</sup></label>
+              <input type="checkbox" id="check6" class="filter__checkbox">
+              <label for="check6" class="filter__label">Mitten<sup>6</sup></label>
+              <input type="checkbox" id="check7" class="filter__checkbox">
+              <label for="check7" class="filter__label">Nailite<sup>7</sup></label>
+              <input type="checkbox" id="check8" class="filter__checkbox">
+              <label for="check8" class="filter__label">Roben<sup>23</sup></label>
+              <input type="checkbox" id="check9" class="filter__checkbox">
+              <label for="check9" class="filter__label">Savewood<sup>14</sup></label>
+              <input type="checkbox" id="check10" class="filter__checkbox">
+              <label for="check10" class="filter__label">Tecos<sup>8</sup></label>
+              <input type="checkbox" id="check11" class="filter__checkbox">
+              <label for="check11" class="filter__label">Альта Профиль<sup>4</sup></label>
+            </fieldset>
+            <fieldset class="filter__field">
+              <p class="filter__subtitle">Высота</p>
+              <input type="checkbox" id="check12" class="filter__checkbox">
+              <label for="check12" class="filter__label">До 470 мм<sup>11</sup></label>
+              <input type="checkbox" id="check13" class="filter__checkbox">
+              <label for="check13" class="filter__label">До 600 мм<sup>15</sup></label>
+            </fieldset>
+            <fieldset class="filter__field">
+              <p class="filter__subtitle">Модель</p>
+              <div class="swiper-container filter__slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide filter__slide">
+                    <input type="checkbox" id="check14" class="filter__checkbox">
+                    <label for="check14" class="filter__label">Карабельный брус<sup>2</sup></label>
+                    <input type="checkbox" id="check15" class="filter__checkbox">
+                    <label for="check15" class="filter__label">Блог Хаус<sup>7</sup></label>
+                    <input type="checkbox" id="check16" class="filter__checkbox">
+                    <label for="check16" class="filter__label">Брус<sup>15</sup></label>
+                    <input type="checkbox" id="check17" class="filter__checkbox" disabled="">
+                    <label for="check17" class="filter__label">Ёлочка <sup>0</sup></label>
+                    <input type="checkbox" id="check18" class="filter__checkbox">
+                    <label for="check18" class="filter__label">Стандартная<sup>13</sup></label>
+                    <input type="checkbox" id="check19" class="filter__checkbox">
+                    <label for="check19" class="filter__label">Ручной формовки<sup>17</sup></label>
+                    <input type="checkbox" id="check20" class="filter__checkbox">
+                    <label for="check20" class="filter__label">Эконом<sup>8</sup></label>
+                    <input type="checkbox" id="check21" class="filter__checkbox">
+                    <label for="check21" class="filter__label">Стандарт<sup>7</sup></label>
+                    <input type="checkbox" id="check14" class="filter__checkbox">
+                    <label for="check14" class="filter__label">Карабельный брус<sup>2</sup></label>
+                    <input type="checkbox" id="check15" class="filter__checkbox">
+                    <label for="check15" class="filter__label">Блог Хаус<sup>7</sup></label>
+                    <input type="checkbox" id="check16" class="filter__checkbox">
+                    <label for="check16" class="filter__label">Брус<sup>15</sup></label>
+                    <input type="checkbox" id="check17" class="filter__checkbox" disabled="">
+                    <label for="check17" class="filter__label">Ёлочка <sup>0</sup></label>
+                  </div>
+                </div>
+                <div class="swiper-scrollbar filter__scrollbar"></div>
+              </div>
+            </fieldset>
+            <fieldset class="filter__field">
+              <p class="filter__subtitle">Тип</p>
+              <input type="checkbox" id="check22" class="filter__checkbox">
+              <label for="check22" class="filter__label">Акриловый<sup>11</sup></label>
+              <input type="checkbox" id="check23" class="filter__checkbox">
+              <label for="check23" class="filter__label">Виниловый<sup>12</sup></label>
+              <input type="checkbox" id="check24" class="filter__checkbox">
+              <label for="check24" class="filter__label">Под дерево<sup>7</sup></label>
+              <input type="checkbox" id="check25" class="filter__checkbox">
+              <label for="check25" class="filter__label">Под кирпич<sup>4</sup></label>
+              <input type="checkbox" id="check26" class="filter__checkbox">
+              <label for="check26" class="filter__label">Под камень<sup>5</sup></label>
+              <input type="checkbox" id="check27" class="filter__checkbox">
+              <label for="check27" class="filter__label">Под щепу<sup>20</sup></label>
+            </fieldset>
+            <button type="submit" class="btn filter__btn">Применить параметры</button>
+            <a href="#" class="filter__clear">Очистить выбор</a>
+          </form>
+        </div>
+        
         <p class="sidebar__title">Популярные товары</p>
         
         <div class="swiper-container sidebar__slider">
@@ -571,7 +660,7 @@
         </div>
         
         <section class="catalog">
-          <h1 class="title-main">Металлочерепица</h1>
+          <h1 class="title-main">Металлочерепица Grand Line</h1>
           <nav class="breadcrumbs">
             <a href="#" class="breadcrumbs__link">Главная</a>
             <a href="#" class="breadcrumbs__link">Каталог</a>
@@ -582,32 +671,25 @@
           <ul class="catalog__list">
             <li class="catalog__item">
               <figure class="catalog__img">
-                <img src="img/images/roof-8.jpg" alt="Металлочерепица">
+                <img src="img/images/roof-1.jpg" alt="Металлочерепица">
               </figure>
               <div class="catalog__info">
-                <p class="catalog__title">Металлочерепица Металл Профиль</p>
+                <p class="catalog__title">Металлочерепица Гранд Лайн Classic</p>
                 <p class="catalog__price">от 300 руб/м<sup>2</sup></p>
                 <a href="#" class="catalog__more">Подробнее</a>
               </div>
               <div class="catalog__hover">
-                <ul class="catalog__hover-list">
-                  <li><a href="#">Shinglas</a></li>
-                  <li><a href="#">Katepal</a></li>
-                  <li><a href="#">Tegola</a></li>
-                  <li><a href="#">Docke</a></li>
-                  <li><a href="#">CertainTeed</a></li>
-                  <li><a href="#">Gaf</a></li>
-                  <li><a href="#">Мягкая кровля полезные статьи</a></li>
-                </ul>
+                <p>Металлочерепица серии Classic от мирового производителя «Гранд Лайн» наиболее востребована среди покупателей. Она обладает довольно стандартным типом профиля, который по своей геометрии очень похож на классическую керамическую черепицу.</p>
               </div>
+              <a href="#" class="catalog__tag">Classic</a>
             </li>
             <li class="catalog__item">
               <figure class="catalog__img">
-                <img src="img/images/roof-9.jpg" alt="Металлочерепица">
+                <img src="img/images/roof-2.jpg" alt="Мягкая кровля">
               </figure>
               <div class="catalog__info">
-                <p class="catalog__title">Металлочерепица Grand Line</p>
-                <p class="catalog__price">от 376 руб/м<sup>2</sup></p>
+                <p class="catalog__title">Металлочерепица Гранд Лайн Classic</p>
+                <p class="catalog__price">от 407 руб/м<sup>2</sup></p>
                 <a href="#" class="catalog__more">Подробнее</a>
               </div>
               <div class="catalog__hover">
@@ -621,14 +703,15 @@
                   <li><a href="#">Мягкая кровля полезные статьи</a></li>
                 </ul>
               </div>
+              <a href="#" class="catalog__tag">Country (Kredo)</a>
             </li>
             <li class="catalog__item">
               <figure class="catalog__img">
-                <img src="img/images/roof-10.jpg" alt="Металлочерепица Ruukki">
+                <img src="img/images/roof-3.jpg" alt="Композитная черепица">
               </figure>
               <div class="catalog__info">
-                <p class="catalog__title">Металлочерепица Ruukki</p>
-                <p class="catalog__price">от 735 руб/м<sup>2</sup></p>
+                <p class="catalog__title">Металлочерепица Гранд Лайн Kvinta</p>
+                <p class="catalog__price">от 407 руб/м<sup>2</sup></p>
                 <a href="#" class="catalog__more">Подробнее</a>
               </div>
               <div class="catalog__hover">
@@ -642,117 +725,94 @@
                   <li><a href="#">Мягкая кровля полезные статьи</a></li>
                 </ul>
               </div>
+              <a href="#" class="catalog__tag">Kvinta</a>
+            </li>
+            <li class="catalog__item">
+              <figure class="catalog__img">
+                <img src="img/images/roof-4.jpg" alt="Металлочерепица">
+              </figure>
+              <div class="catalog__info">
+                <p class="catalog__title">Металлочерепица Kamea</p>
+                <p class="catalog__price">от 407 руб/м<sup>2</sup></p>
+                <a href="#" class="catalog__more">Подробнее</a>
+              </div>
+              <div class="catalog__hover">
+                <ul class="catalog__hover-list">
+                  <li><a href="#">Shinglas</a></li>
+                  <li><a href="#">Katepal</a></li>
+                  <li><a href="#">Tegola</a></li>
+                  <li><a href="#">Docke</a></li>
+                  <li><a href="#">CertainTeed</a></li>
+                  <li><a href="#">Gaf</a></li>
+                  <li><a href="#">Мягкая кровля полезные статьи</a></li>
+                </ul>
+              </div>
+              <a href="#" class="catalog__tag">Kamea</a>
             </li>
           </ul>
         </section>
         
-        <section class="product">
-          <p class="title-main">Популярные товары в этой категории</p>
-          <div class="swiper-container product__slider">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide product__slide">
-                <figure class="catalog__img">
-                  <img src="img/images/product-1.jpg" alt="Полиэстер 0,4/0,45мм">
-                </figure>
-                <div class="catalog__info">
-                  <p class="catalog__title">Полиэстер 0,4/0,45мм</p>
-                  <p class="catalog__price">от 300/360 руб/м<sup>2</sup></p>
-                  <a href="#" class="catalog__more">Подробнее</a>
-                </div>
-              </div>
-              <div class="swiper-slide product__slide">
-                <figure class="catalog__img">
-                  <img src="img/images/product-2.jpg" alt="Granite CLOUDY 0,5мм">
-                </figure>
-                <div class="catalog__info">
-                  <p class="catalog__title">Granite CLOUDY 0,5мм</p>
-                  <p class="catalog__price">613 руб/м<sup>2</sup></p>
-                  <a href="#" class="catalog__more">Подробнее</a>
-                </div>
-              </div>
-              <div class="swiper-slide product__slide">
-                <figure class="catalog__img">
-                  <img src="img/images/product-3.jpg" alt="Colorcoat Prisma 0,5мм">
-                </figure>
-                <div class="catalog__info">
-                  <p class="catalog__title">Colorcoat Prisma® 0,5мм</p>
-                  <p class="catalog__price">565 руб/м<sup>2</sup></p>
-                  <a href="#" class="catalog__more">Подробнее</a>
-                </div>
-              </div>
-              <div class="swiper-slide product__slide">
-                <figure class="catalog__img">
-                  <img src="img/images/product-1.jpg" alt="Полиэстер 0,4/0,45мм">
-                </figure>
-                <div class="catalog__info">
-                  <p class="catalog__title">Полиэстер 0,4/0,45мм</p>
-                  <p class="catalog__price">от 300/360 руб/м<sup>2</sup></p>
-                  <a href="#" class="catalog__more">Подробнее</a>
-                </div>
-              </div>
-              <div class="swiper-slide product__slide">
-                <figure class="catalog__img">
-                  <img src="img/images/product-2.jpg" alt="Granite CLOUDY 0,5мм">
-                </figure>
-                <div class="catalog__info">
-                  <p class="catalog__title">Granite CLOUDY 0,5мм</p>
-                  <p class="catalog__price">613 руб/м<sup>2</sup></p>
-                  <a href="#" class="catalog__more">Подробнее</a>
-                </div>
-              </div>
-              <div class="swiper-slide product__slide">
-                <figure class="catalog__img">
-                  <img src="img/images/product-3.jpg" alt="Colorcoat Prisma 0,5мм">
-                </figure>
-                <div class="catalog__info">
-                  <p class="catalog__title">Colorcoat Prisma® 0,5мм</p>
-                  <p class="catalog__price">565 руб/м<sup>2</sup></p>
-                  <a href="#" class="catalog__more">Подробнее</a>
-                </div>
-              </div>              
-            </div>
-            <div class="swiper-pagination product__scrollbar"></div>
-          </div>
-          
-        </section>
-        
-        <section class="block">
-          <figure class="block__img">
-            <img src="img/images/img-16.jpg" alt="Кровля">
+       <section class="block">
+        <figure class="block__img">
+          <img src="img/images/img-18.jpg" alt="Кровля">
+        </figure>
+        <div class="block__text">
+          <p class="title-2">Металлочерепица Grand Line</p>
+          <p>Металлочерепица Гранд Лайн - это долговечный профиль, основанный в 1965 году заводом Металлист. За время своего существования производитель Grand Line зарекомендовал себя как надежное, процветающее предприятие. Металлочерепица в наше время очень востребованный материал, а самое главное она практична при эксплуатации в суровых климатических условиях и не требует дополнительных вложений.</p>
+          <p>Кроме того различные виды металлочерепицы Гранд Лайн хорошо вентилируется, что для кровли очень необходимо. Металлочерепица Гранд Лайн имеет хороший ассортимент цветов профилированной продукции, а так же устойчива к серьезным нагрузкам, механическим и атмосферным.</p>
+          <p>Наша компания Кровля Навсегда является официальным партнером завода Grand Line, а это значит что мы вместе сделаем крышу вашего дома привлекательной, а самое главное прочной и особенной. Каждого человека интересует качественный и приемлемый по цене материал - металлочерепица Гранд Лайн имеет толщину стали 0,5 мм, что является гарантом превосходящим конкурентов на 20%.</p>
+
+          <p class="title-2">Производство металлочерепицы</p>
+          <p>Концерн Grand Line — один из лидирующих производителей кровельных и виниловых материалов для строительства домов и загородных коттеджей в России. Динамика развития Обнинского завода Гранд Лайн не имеет ограничений в модернизации разнопрофильной металлочерепицы.</p>
+          <p>Отличный выбор металлочерепицы Grand Line сохраняет срок службы крыши до 50 лет. Только сегодня Гранд Лайн выпускает более семи категорий строительных продуктов, в которые входит основа всех загородных домов - это металлочерепица Классик, Квинта, Кантри, профнастил с богатым выбором профиля С8, С10, С20, С21, металлический сайдинг Корабельная доска, Эко-Брус, Блок-Хаус, виниловый сайдинг, софиты для подшивки фасада и карнизного свеса, водосточные системы и кровельные элементы безопасности.</p>
+          <p>Девиз компании Grand Line - выпускать продукцию только высокого качества. В Обнинске завод имеет собственную новейшую лабораторию, которая постоянно тестирует сырье для производства надежной металлочерепицы.</p>
+
+          <p class="title-2">Виды металлочерепицы Гранд Лайн:</p>
+          <p>Металлочерепица Grand Line имеет изысканный выбор профилей, которые помогут вам воплотить самые оригинальные идеи в создании любимой крыши над головой. Большим спросом пользуются три основных вида металлочерепицы - это Kvinta, Classic, Country. Так же серьезный подход у завода Гранд Лайн к полимерам для металлочерепицы. Покрытия имеют разную толщину, гарантийный срок службы и варьируются по цене.</p>
+
+          <figure class="block__img block__img--center">
+            <img src="img/images/img-19.jpg" alt="Виды металлочерепицы Гранд Лайн">
           </figure>
-          <div class="block__text">
-            <p class="title-2">Металлочерепица для крыши вашего дома</p>
-            <p>Кровля из металлочерепицы: на сегодняшний день кровля из металлочерепицы получила широкое распространение благодаря оптимальному соотношению "цена - качество", простотой монтажа, надежностью в эксплуатации. Такая кровля как металлочерепица очень практичный строительный материал, так как металлочерепица сама по себе хорошо проветривается, а в любой кровле самое главное вентиляция, которая увеличивает срок службы всего строения.</p>
-            <p>Металлочерепица Monterrey выпускается из холоднокатанной горячеоцинкованной стали толщиной 0,4 - 0,7 мм. Листы стали покрываются слоем цинка , после чего происходит грунтовка, пассивирование и покрытие защитным слоем полимеров, которые защищают металлочерепицу от коррозии и обеспечивают стойкость цвета от выцветания. Кровля из Металлочерепицы различается формой профиля, толщиной металла, геометрией листа, видами полимерных покрытий и цветами. Одним из самых распространенных видов профиля является Монтеррей (Monterrey). Основные виды покрытий - это Полиэстер, Пурал (Призма), и Пластизол.</p>
-            <p>Металлочерепица цена: стоимость металлочерепицы складывается по трем факторам: толщина металла, качество нанесенного покрытия и страна производителя. В нашей компании Кровля Навсегда большой выбор металлочерепицы, одни из популярных: финская металлочерепица Poimukate и кровля из металлочерепицы российского производителя Металл Профиль.</p>
-            <p>Надежность, качество, простота монтажа и делают кровлю этих производителей наиболее привлекательными по цене на рынке строительных материалов. Соотношение этих характеристик поможет определится с выбором металлочерепицы из ваших пожеланий и бюджетных средств.</p>
-            
-            <figure class="block__img">
-              <img src="img/images/img-17.jpg" alt="Металлочерепица">
-            </figure>
-            
-            <p class="title-2">Размеры металлочерепицы Монтеррей:</p>
-            <p>Практически все производители катают под складскую программу стандартные размеры металлочерепицы, при такой нарезке металлочерепицы можно собрать любой скат. Нахлест металла по горизонтали 8 см, а вертикали 15 см.</p>
-            <div class="block__list">
-              <ul>
-                <li>1 волновый лист 0,5 м</li>
-                <li>3 волновой лист 1,2 м</li>
-                <li>6 волновый лист 2,25 м</li>
-                <li>10 волновой лист 3,65 м</li>
-              </ul>
-              <ul>
-                <li>ширина листа габаритная 1180 мм</li>
-                <li>ширина листа рабочая 1100 мм</li>
-                <li>высота волны 25 мм</li>
-                <li>шаг волны 350 мм</li>
-                <li>высота ступени 14 мм</li>
-                <li>толщина металла 0,4-0,5</li>
-              </ul>
-            </div>
-          </div>
+
+          <p>Тем самым кровельный материал позволяет решить задачи от эконом-класса, до самых индивидуальных проектов премиум сегмента. Типы покрытий металлочерепицы Grand Line: Solano, Granite, Quarzit™35, Quarzit Lite™30, Quarzit Matt, Colority® Print, Safari, Velur®20, Полиэстер.</p>
+        </div>
+      </section>
+       
+        <section class="object">
+          <a href="#" class="link">Смотреть все объекты</a>
+          <p class="title-main">Наши объекты</p>
+          <ul class="object__list">
+            <li class="object__item">
+              <a href="#" class="object__link">
+                <figure class="object__img">
+                  <img src="img/images/house-1.jpg" alt="Наши объекты">
+                </figure>
+                <p class="object__title">Дом ТЕХНИКОЛЬ</p>
+                <p class="object__about">Мягкая черепица, Shinglas</p>
+              </a>
+            </li>
+            <li class="object__item">
+              <a href="#" class="object__link">
+                <figure class="object__img">
+                  <img src="img/images/house-2.jpg" alt="Наши объекты">
+                </figure>
+                <p class="object__title">Частный дом в г. Уфа</p>
+                <p class="object__about">Фасадная плитка, Технониколь Hauberk</p>
+              </a>
+            </li>
+            <li class="object__item">
+              <a href="#" class="object__link">
+                <figure class="object__img">
+                  <img src="img/images/house-3.jpg" alt="Наши объекты">
+                </figure>
+                <p class="object__title">Коттеджный поселок Капитан, дом 6 (Р-65)</p>
+                <p class="object__about">Гибкая черепица, Shinglas</p>
+              </a>
+            </li>
+          </ul>
         </section>
         
-        <section class="consult">
+       <section class="consult">
           <p class="title-main title-main--center">Получите консультацию специалиста</p>
           <p class="consult__text">Наши специалисты помогут вам определиться с выбором.<br>Оставьте заявку на консультацию и мы свяжемся с вами в течение нескольких минут.</p>
           <form action="#" class="form consult__form">
@@ -910,31 +970,6 @@
       preventClicksPropagation: false,
     });
     
-    var swiper = new Swiper('.product__slider', {
-        pagination: {
-          el: '.product__scrollbar',
-          type: 'progressbar',
-        },
-        slidesPerView: 4,
-        clickable: true,
-        preventClicks: false,
-        preventClicksPropagation: false,
-        spaceBetween: 5,
-        breakpoints: {
-          1400: {
-              slidesPerView: 3,
-              spaceBetween: 20,
-          },
-          1022: {
-              slidesPerView: 2,
-              spaceBetween: 20,
-          },
-          480: {
-              slidesPerView: 1,
-          }
-        }
-    });
-    
     var mySwiper = new Swiper ('.sidebar__slider', {
       navigation: {
         nextEl: '.sidebar__next',
@@ -942,6 +977,16 @@
       },
       preventClicks: false,
       preventClicksPropagation: false,
+    });
+    
+    var swiper = new Swiper('.filter__slider', {
+      direction: 'vertical',
+      slidesPerView: 'auto',
+      freeMode: true,
+      scrollbar: {
+        el: '.filter__scrollbar',
+      },
+      mousewheel: true,
     });
   </script>
   
@@ -955,6 +1000,15 @@
       $(this).next().slideToggle();
       $(this).toggleClass('nav__catalog-btn--open');
     });
+  </script>
+  
+  <!-- Filter -->
+  <script>
+    if (window.innerWidth < 1200) {
+      $('.filter .title-3').click(function() {
+        $('.filter__form').slideToggle();
+      });      
+    }
   </script>
 </body>
 </html>
