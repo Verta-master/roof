@@ -1,0 +1,138 @@
+.filter {
+  width: 100%;
+//  padding-bottom: 20px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  
+  .title-3 {
+    margin: 0;
+    padding: 25px 30px;
+    padding-bottom: 5px;
+  }
+}
+
+.filter__field {
+  .reset();
+  padding: 10px 30px;
+  border: 0;
+  border-bottom: 1px solid rgb(220, 220, 220);
+  
+  &:last-of-type {
+    border-bottom: 0;
+  }
+}
+
+.filter__subtitle {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: #9b9b9b;
+}
+
+.filter__checkbox {
+  display: none;
+}
+
+.filter__label {
+  position: relative;
+  display: block;
+  margin-bottom: 17px;
+  padding-left: 30px;
+  font-size: 14px;
+  color: #18100d;
+  font-weight: 600;
+  line-height: 1.2;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgb(220, 220, 220);
+  }
+  
+  &::after {
+    display: none;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/icons/done-tick.svg);
+    background-repeat: no-repeat;
+    background-size: 8px 8px;
+    background-position: center;
+  }
+}
+
+.filter__checkbox:checked + .filter__label {
+  &::before {
+    background-color: #459e18;
+    border-color: #459e18;
+  }
+  &::after {
+    display: block;
+  }
+}
+
+.filter__checkbox[disabled] + .filter__label {
+  color: #838383;
+  
+  &::before {
+    background-color: rgb(232, 232, 232);
+  }
+}
+
+.filter__btn {
+  width: 220px;
+  height: 48px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  font-size: 15px;
+  font-weight: 700;
+  background-image: linear-gradient(to top, rgb(189,253,25) 0%, rgb(25,138,186) 100%);
+  
+  &:hover,
+  &:active {
+    background-image: linear-gradient(to bottom, rgb(189,253,25) 0%, rgb(25,138,186) 100%);
+  }
+}
+
+.filter__clear {
+  display: block;
+  padding-bottom: 20px;
+  text-align: center;
+  color: #6b6b6b;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  text-decoration: underline;
+  
+  &:hover,
+  &:active {
+    text-decoration: none;
+  }
+}
+
+.filter__slider {
+  height: 250px;
+  margin-bottom: 20px;
+  
+  .swiper-scrollbar {
+    width: 4px;
+    background-color: rgb(220, 220, 220);
+  }
+  .swiper-scrollbar-drag {
+    background-color: rgb(43, 178, 57);
+  }
+}
+
+.filter__slide {
+  height: auto;
+  box-sizing: border-box;
+}

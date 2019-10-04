@@ -505,7 +505,7 @@
         </nav>
         
         <div class="filter">
-          <p class="filter__title">Подбор по параметрам</p>
+          <p class="title-3">Подбор по параметрам</p>
           <form action="#" class="filter__form">
             <fieldset class="filter__field">
               <p class="filter__subtitle">Производитель</p>
@@ -541,22 +541,37 @@
             </fieldset>
             <fieldset class="filter__field">
               <p class="filter__subtitle">Модель</p>
-              <input type="checkbox" id="check14" class="filter__checkbox">
-              <label for="check14" class="filter__label">Карабельный брус<sup>2</sup></label>
-              <input type="checkbox" id="check15" class="filter__checkbox">
-              <label for="check15" class="filter__label">Блог Хаус<sup>7</sup></label>
-              <input type="checkbox" id="check16" class="filter__checkbox">
-              <label for="check16" class="filter__label">Брус<sup>15</sup></label>
-              <input type="checkbox" id="check17" class="filter__checkbox" disabled>
-              <label for="check17" class="filter__label">Брус<sup>0</sup></label>
-              <input type="checkbox" id="check18" class="filter__checkbox">
-              <label for="check18" class="filter__label">Стандартная<sup>13</sup></label>
-              <input type="checkbox" id="check19" class="filter__checkbox">
-              <label for="check19" class="filter__label">Ручной формовки<sup>17</sup></label>
-              <input type="checkbox" id="check20" class="filter__checkbox">
-              <label for="check20" class="filter__label">Эконом<sup>8</sup></label>
-              <input type="checkbox" id="check21" class="filter__checkbox">
-              <label for="check21" class="filter__label">Стандарт<sup>7</sup></label>
+              <div class="swiper-container filter__slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide filter__slide">
+                    <input type="checkbox" id="check14" class="filter__checkbox">
+                    <label for="check14" class="filter__label">Карабельный брус<sup>2</sup></label>
+                    <input type="checkbox" id="check15" class="filter__checkbox">
+                    <label for="check15" class="filter__label">Блог Хаус<sup>7</sup></label>
+                    <input type="checkbox" id="check16" class="filter__checkbox">
+                    <label for="check16" class="filter__label">Брус<sup>15</sup></label>
+                    <input type="checkbox" id="check17" class="filter__checkbox" disabled>
+                    <label for="check17" class="filter__label">Ёлочка <sup>0</sup></label>
+                    <input type="checkbox" id="check18" class="filter__checkbox">
+                    <label for="check18" class="filter__label">Стандартная<sup>13</sup></label>
+                    <input type="checkbox" id="check19" class="filter__checkbox">
+                    <label for="check19" class="filter__label">Ручной формовки<sup>17</sup></label>
+                    <input type="checkbox" id="check20" class="filter__checkbox">
+                    <label for="check20" class="filter__label">Эконом<sup>8</sup></label>
+                    <input type="checkbox" id="check21" class="filter__checkbox">
+                    <label for="check21" class="filter__label">Стандарт<sup>7</sup></label>
+                    <input type="checkbox" id="check14" class="filter__checkbox">
+                    <label for="check14" class="filter__label">Карабельный брус<sup>2</sup></label>
+                    <input type="checkbox" id="check15" class="filter__checkbox">
+                    <label for="check15" class="filter__label">Блог Хаус<sup>7</sup></label>
+                    <input type="checkbox" id="check16" class="filter__checkbox">
+                    <label for="check16" class="filter__label">Брус<sup>15</sup></label>
+                    <input type="checkbox" id="check17" class="filter__checkbox" disabled>
+                    <label for="check17" class="filter__label">Ёлочка <sup>0</sup></label>
+                  </div>
+                </div>
+                <div class="swiper-scrollbar filter__scrollbar"></div>
+              </div>
             </fieldset>
             <fieldset class="filter__field">
               <p class="filter__subtitle">Тип</p>
@@ -664,15 +679,7 @@
                 <a href="#" class="catalog__more">Подробнее</a>
               </div>
               <div class="catalog__hover">
-                <ul class="catalog__hover-list">
-                  <li><a href="#">Shinglas</a></li>
-                  <li><a href="#">Katepal</a></li>
-                  <li><a href="#">Tegola</a></li>
-                  <li><a href="#">Docke</a></li>
-                  <li><a href="#">CertainTeed</a></li>
-                  <li><a href="#">Gaf</a></li>
-                  <li><a href="#">Мягкая кровля полезные статьи</a></li>
-                </ul>
+                <p>Металлочерепица серии Classic от мирового производителя «Гранд Лайн» наиболее востребована среди покупателей. Она обладает довольно стандартным типом профиля, который по своей геометрии очень похож на классическую керамическую черепицу.</p>
               </div>
               <a href="#" class="catalog__tag">Classic</a>
             </li>
@@ -971,6 +978,16 @@
       preventClicks: false,
       preventClicksPropagation: false,
     });
+    
+    var swiper = new Swiper('.filter__slider', {
+      direction: 'vertical',
+      slidesPerView: 'auto',
+      freeMode: true,
+      scrollbar: {
+        el: '.filter__scrollbar',
+      },
+      mousewheel: true,
+    });
   </script>
   
   <!-- Sidebar navigation -->
@@ -983,6 +1000,15 @@
       $(this).next().slideToggle();
       $(this).toggleClass('nav__catalog-btn--open');
     });
+  </script>
+  
+  <!-- Filter -->
+  <script>
+    if (window.innerWidth < 1200) {
+      $('.filter .title-3').click(function() {
+        $('.filter__form').slideToggle();
+      });      
+    }
   </script>
 </body>
 </html>
