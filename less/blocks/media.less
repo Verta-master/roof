@@ -58,9 +58,11 @@
   .content {
     width: ~"calc(100% - 300px)";
   }
+  .classic__list,
   .catalog__list {
     margin-right: -20px;
   }
+  .classic__item,
   .catalog__item {
     margin-right: 20px;
     margin-bottom: 20px;
@@ -217,6 +219,7 @@
     background-position: right 10px center;
     background-size: 8px 5px;
   }
+  .classic__list,
   .catalog__list {
     margin-right: 0;
   }
@@ -233,6 +236,24 @@
     &:hover,
     &:active {
       color: #459e18;
+    }
+  }
+  .classic__item {
+    .classic__img {
+      height: 180px !important;
+    }
+    .classic__tags {
+      display: block !important;
+    }
+    .classic__table,
+    .classic__more {
+      display: block;
+    }
+    .classic__btns {
+      display: flex;
+    }
+    .classic__info {
+      padding-bottom: 60px;
     }
   }
 }
@@ -395,6 +416,7 @@
   .title-main {
     font-size: 30px;
   }
+  .classic__list,
   .catalog__list {
     justify-content: space-around;
     margin-right: 0;
