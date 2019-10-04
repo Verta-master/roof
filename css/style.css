@@ -3120,6 +3120,15 @@ span.pages__link {
 .blog .block__text {
   padding: 15px 20px 30px 20px;
 }
+.blog__link {
+  display: block;
+  padding: 15px;
+}
+.blog__link img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 @media (max-width: 1800px) {
   .banner__prev {
     left: 0;
@@ -3623,5 +3632,8 @@ span.pages__link {
     position: relative;
     padding-bottom: 30px;
     margin-bottom: 50px;
+  }
+  .blog__link {
+    padding: 5px;
   }
 }
