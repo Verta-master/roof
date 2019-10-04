@@ -2161,6 +2161,20 @@ a.breadcrumbs__link:active::after {
 .block .title-3 {
   margin-top: 25px;
 }
+.block__btn {
+  width: 180px;
+  height: 50px;
+  margin-left: auto;
+  font-size: 16px;
+  border-radius: 3px;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#bdfd19), to(#198aba));
+  background-image: linear-gradient(to top, #bdfd19 0%, #198aba 100%);
+}
+.block__btn:hover,
+.block__btn:active {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#bdfd19), to(#198aba));
+  background-image: linear-gradient(to bottom, #bdfd19 0%, #198aba 100%);
+}
 .block__img {
   width: 100%;
 }
@@ -2979,6 +2993,7 @@ a.breadcrumbs__link:active::after {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-bottom: 100px;
 }
 .pages__link {
   display: -webkit-box;
@@ -3092,6 +3107,18 @@ span.pages__link {
   margin-bottom: 5px;
   -webkit-transition: ease-out 0.3s;
   transition: ease-out 0.3s;
+}
+.blog {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 80px;
+}
+.blog .block {
+  margin-bottom: 30px;
+}
+.blog .block__text {
+  padding: 15px 20px 30px 20px;
 }
 @media (max-width: 1800px) {
   .banner__prev {
