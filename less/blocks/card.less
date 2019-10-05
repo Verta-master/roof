@@ -1,0 +1,228 @@
+.card {
+  margin-bottom: 20px;
+  
+  .classic__table {
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+.card__wrap {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(242, 238, 237);
+  border-radius: 5px;
+}
+
+.card__product {
+  width: 520px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 5px 0 0 5px;
+}
+
+.card__info {
+  width: ~"calc(100% - 520px)";
+  padding: 40px 50px;
+  padding-top: 20px;
+  
+  .title-main {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #18100d;
+    font-size: 32px;
+    line-height: 1.2;
+  }
+}
+
+.card__info-wrap {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 30px;
+  line-height: 1.2;
+}
+
+.card__oldprice {
+  position: relative;
+  margin: 0;
+  margin-right: 30px;
+  color: #757575;
+  font-size: 20px;
+  font-weight: 600;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: rgba(255, 0, 0, 0.7);
+    transform: rotate(-10deg);
+  }
+}
+
+.card__price {
+  margin: 0;
+  margin-right: 30px;
+  color: #ff0000;
+  font-size: 28px;
+  font-weight: 900;
+}
+
+.card__articul {
+  margin: 0;
+  margin-left: auto;
+  font-size: 14px;
+  color: #969696;
+  
+  span {
+    color: #18100d;
+  }
+}
+
+.card__btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card__btn {
+  width: 210px;
+  height: 52px;
+  border-radius: 3px;
+  background-image: linear-gradient(to top, rgb(189,253,25) 0%, rgb(25,138,186) 100%);
+  
+  &:hover,
+  &:active {
+    background-image: linear-gradient(to bottom, rgb(189,253,25) 0%, rgb(25,138,186) 100%);
+  }
+}
+
+.card__number {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.card__change {
+  display: block;
+  position: relative;
+  z-index: 5;
+  width: 40px;
+  height: 52px;
+  color: rgba(0,0,0,0.7);
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  
+  &:hover,
+  &:active {
+    color: rgba(0,0,0,1);
+  }
+}
+
+.card__value {
+  display: block;
+  width: 85px;
+  height: 52px;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.card__top {
+  position: relative;
+  border-radius: 5px 0 0 0;
+}
+
+.card__tags {
+  position: absolute;
+  top: 20px;
+  left: -7px;
+}
+
+.card__bottom {
+  margin-top: auto;
+  padding: 20px 30px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 0 0 0 5px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.card__check {
+  display: none;
+}
+
+.card__color {
+  position: relative;
+  z-index: 2;
+  margin-left: 5px;
+  margin-right: 5px;
+  
+  &::before {
+    display: none;
+    content: "";
+    position: absolute;
+    z-index: -1;
+    bottom: -3px;
+    left: -6px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,0.1);
+  }
+}
+
+.card__check:checked + .card__color::before {
+  display: block;
+}
+
+.card__like {
+  position: absolute;
+  z-index: 5;
+  top: 20px;
+  right: 30px;
+  display: block;
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgb(220, 220, 220);
+  border-radius: 3px;
+  background-image: url(../img/icons/like.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px 20px;
+  opacity: 0.5;
+  
+  &:hover,
+  &:active {
+    opacity: 1;
+    border-color: #000;
+  }
+}
+
+.card__slide {
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  
+  img {
+    display: block;
+    flex: 0 0 auto;
+  }
+}
+
+.card__prev,
+.card__next {
+  background-image: url(../img/icons/arrow2.svg);
+  background-size: 22px 22px;
+}
