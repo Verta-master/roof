@@ -464,6 +464,11 @@ button {
   line-height: 1.2;
   font-weight: 700;
 }
+.title-20 {
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 700;
+}
 .title-3 {
   font-size: 18px;
   font-weight: 600;
@@ -1897,6 +1902,9 @@ button {
   width: 880px;
   max-width: 100%;
 }
+.content > .title-main {
+  margin-top: 0;
+}
 .content__slide {
   height: 300px;
   background-repeat: no-repeat;
@@ -2161,6 +2169,101 @@ a.breadcrumbs__link:active::after {
 .block .title-3 {
   margin-top: 25px;
 }
+.block ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 25px;
+}
+.block ul li {
+  position: relative;
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+.block ul li::before {
+  content: "\2014";
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.block .block__list li::before {
+  content: "";
+  top: 8px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #459e18;
+}
+.block .block__list-2 li {
+  padding-left: 30px;
+}
+.block .block__list-2 li::before {
+  content: "";
+  top: 4px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#bdfd19), to(#198aba));
+  background-image: linear-gradient(to top, #bdfd19 0%, #198aba 100%);
+}
+.block .block__list-2 li::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  background-image: url(../img/icons/done-tick.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 10px 10px;
+}
+.block ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: my-counter;
+}
+.block ol li {
+  counter-increment: my-counter;
+  position: relative;
+  z-index: 2;
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+.block ol li::before {
+  content: counter(my-counter) ". ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: 600;
+}
+.block .block__list-4 li {
+  padding-left: 30px;
+}
+.block .block__list-4 li::before {
+  content: counter(my-counter);
+  position: absolute;
+  top: 8px;
+  left: 5px;
+  z-index: 2;
+  color: #fff;
+  line-height: 1;
+  font-size: 10px;
+  font-weight: 700;
+}
+.block .block__list-4 li::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 5px;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  background-color: #459e18;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
 .block__btn {
   width: 180px;
   height: 50px;
@@ -2187,6 +2290,7 @@ a.breadcrumbs__link:active::after {
   width: auto;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 30px;
 }
 .block__text {
   padding: 5px 50px;
@@ -2194,29 +2298,50 @@ a.breadcrumbs__link:active::after {
   color: #18100d;
   font-size: 15px;
 }
-.block__text ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  margin-bottom: 25px;
+.block__text--columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border-top: 1px solid #dcdcdc;
 }
-.block__text ul li {
-  position: relative;
-  padding-left: 20px;
+.block__column {
+  width: 50%;
 }
-.block__text ul li::before {
-  content: "\2014";
-  position: absolute;
-  top: 0;
-  left: 0;
+.block__table {
+  width: 100%;
+  font-size: 14px;
+  border-collapse: collapse;
 }
-.block__text .block__list li::before {
-  content: "";
-  top: 8px;
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background-color: #459e18;
+.block__table tr:first-child {
+  font-weight: 600;
+}
+.block__table tr:first-child td {
+  padding-top: 25px;
+  padding-bottom: 10px;
+}
+.block__table tr:last-child td {
+  padding-bottom: 25px;
+}
+.block__table tr {
+  border-bottom: 1px solid #dcdcdc;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.block__table tr:hover {
+  background-color: rgba(220, 220, 220, 0.5);
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.block__table td:first-child {
+  padding-left: 30px;
+  font-weight: 600;
+  border-right: 1px solid #dcdcdc;
+}
+.block__table td {
+  height: 40px;
+  padding: 0 20px;
 }
 .product {
   margin-bottom: 50px;
@@ -3471,6 +3596,54 @@ span.pages__link {
   font-size: 14px;
   font-weight: 600;
   line-height: 1.2;
+}
+.citation {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  position: relative;
+  padding: 20px 50px;
+  padding-right: 90px;
+  margin-bottom: 30px;
+  font-size: 20px;
+  line-height: 28px;
+  color: #fff;
+  background-color: #459e18;
+}
+.citation::before {
+  content: "\201D";
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: #fff;
+  font-size: 60px;
+  font-weight: 900;
+  line-height: 1;
+}
+.citation__title {
+  font-size: 22px;
+  font-weight: 700;
+}
+.citation-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.citation-text .citation {
+  width: 280px;
+  padding: 10px 30px;
+  font-size: 16px;
+}
+.citation-text .citation::before {
+  top: 10px;
+  right: 20px;
+}
+.citation__info {
+  width: calc(100% - 300px);
+  padding-right: 50px;
 }
 @media (max-width: 1800px) {
   .banner__prev {
