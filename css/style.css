@@ -2876,7 +2876,13 @@ a.breadcrumbs__link:active::after {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   margin-bottom: 3px;
+}
+.classic__cell {
+  max-width: 100%;
 }
 .classic__cell:last-of-type {
   font-weight: 600;
@@ -3677,7 +3683,6 @@ span.pages__link {
   .category__list {
     max-width: 1200px;
     margin-left: auto;
-    margin-right: auto;
   }
   .category__item {
     width: 280px;
@@ -3807,6 +3812,7 @@ span.pages__link {
   .category__list {
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    margin-right: auto;
   }
   .category__item--big {
     width: 280px;
@@ -4260,5 +4266,8 @@ span.pages__link {
   .citation__info {
     padding: 0 20px;
     font-size: 15px;
+  }
+  .classic__cell:first-of-type {
+    max-width: 80%;
   }
 }
