@@ -3192,7 +3192,7 @@ span.pages__link {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   line-height: 1.2;
 }
 .card__oldprice {
@@ -3307,6 +3307,12 @@ span.pages__link {
   -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
 }
+.card__bottom span {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+  line-height: 1;
+}
 .card__check {
   display: none;
 }
@@ -3404,7 +3410,7 @@ span.pages__link {
 }
 .tabs__name a {
   display: block;
-  padding: 20px 35px;
+  padding: 17px 35px;
   outline: none;
 }
 .tabs__field {
@@ -3538,6 +3544,28 @@ span.pages__link {
   }
   .footer__contacts {
     width: 25%;
+  }
+  .card__info,
+  .card__product {
+    width: 50%;
+  }
+  .card__info {
+    padding: 20px 30px;
+  }
+  .card__bottom span {
+    display: block;
+    margin-bottom: 5px;
+  }
+  .card__btns {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .card__stars {
+    margin-left: auto;
+    margin-top: 5px;
+  }
+  .card__btn {
+    width: 180px;
   }
 }
 @media (max-width: 1200px) {
@@ -3804,6 +3832,20 @@ span.pages__link {
   .object__item .object__img {
     height: 145px;
   }
+  .card__wrap {
+    display: block;
+  }
+  .card__info,
+  .card__product {
+    width: 100%;
+  }
+  .card__stars {
+    margin-left: 0;
+  }
+  .card__bottom span {
+    display: inline-block;
+    vertical-align: middle;
+  }
 }
 @media (max-width: 600px) {
   .header__wrap {
@@ -3934,6 +3976,20 @@ span.pages__link {
   .object__item .object__img {
     height: 180px;
   }
+  .card__bottom span {
+    display: block;
+  }
+  .card__info .title-main {
+    font-size: 26px;
+  }
+  .card__info-wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .card__articul {
+    margin-top: 10px;
+    margin-left: 0;
+  }
 }
 @media (max-width: 480px) {
   .content__info {
@@ -3972,5 +4028,28 @@ span.pages__link {
   }
   .blog__link {
     padding: 5px;
+  }
+  .card__btns {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .card__number {
+    margin-bottom: 10px;
+  }
+  .tabs__labels {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .tabs__name a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .tabs__list {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
