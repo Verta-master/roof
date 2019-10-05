@@ -756,9 +756,7 @@
   <script>
     $('.info__title').click(function() {
       $('.info__item').removeClass('info__item--opened');
-      $('.info__drop').slideUp();
-      $(this).next().slideDown();
-      $(this).parent().addClass('info__item--opened');
+      $(this).parent().toggleClass('info__item--opened');
     });
   </script>
 </body>
