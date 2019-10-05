@@ -4019,6 +4019,10 @@ span.pages__link {
     display: inline-block;
     vertical-align: middle;
   }
+  .block__table td:first-child,
+  .block__table td {
+    padding: 0 10px;
+  }
 }
 @media (max-width: 600px) {
   .header__wrap {
@@ -4163,6 +4167,29 @@ span.pages__link {
     margin-top: 10px;
     margin-left: 0;
   }
+  .block__text--columns,
+  .citation-text {
+    display: block;
+  }
+  .citation-text .citation {
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .citation__info {
+    width: 100%;
+    padding-left: 50px;
+  }
+  .block__column {
+    width: 100%;
+  }
+  .block__table-wrap {
+    width: 100%;
+    overflow-x: scroll;
+  }
+  .block__table-wrap .block__table {
+    width: 730px;
+  }
 }
 @media (max-width: 480px) {
   .content__info {
@@ -4224,5 +4251,14 @@ span.pages__link {
   .tabs__list {
     -ms-flex-pack: distribute;
         justify-content: space-around;
+  }
+  .citation-text .citation,
+  .citation {
+    padding: 20px;
+    padding-top: 30px;
+  }
+  .citation__info {
+    padding: 0 20px;
+    font-size: 15px;
   }
 }
